@@ -354,7 +354,7 @@ return [
     'best_size' => 'المقاس :- ',
     'hello_to_trust' => 'مرحبا بك ف Trust',
     'lets_contact' => 'تواصل معنا',
-    'about_trust' => 'عن ترست',
+    'about_trust' => 'عن الشركة',
     'our_features' => 'مميزتنا',
     'our_protfolio' =>'اعمالنا',
     'our_feature_projects' => 'مشاريعنا المميزة',
@@ -385,5 +385,5 @@ return [
     'give_call_us' => 'اتصل بنا',
     'follow_us_desc' => 'تابعونا على وسائل التواصل الاجتماعي لمعرفة آخر التحديثات حول التقدم الذي أحرزناه.',
     'got_aproject_that' => 'هل لديك مشروع تود مناقشته؟',
-
+    'our_ambition'      => 'طموحنا',
 ];
