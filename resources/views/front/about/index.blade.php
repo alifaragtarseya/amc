@@ -10,14 +10,23 @@
 @endsection
 @section('content')
     <!-- Page Header Start -->
-    <div class="container-fluid page-header p-0 " style="background-image: url({{ asset($metaBanner->image) }}); "
+    <div class="container-fluid page-header p-0 pt-5" style="background-image: url({{ asset($metaBanner->image) }});"
         data-wow-delay="0.1s">
-        <div class="meta--banner ">
-            <b
-                class="text-center p-2 w3-round-xxlarge border text-white animated slideInDown mb-4">{{ isRtl() ? $metaBanner->title : $metaBanner->title_en }}</b>
-            <div class="text-center" style="width: {{ isMobile() ? '' : '50%;' }}">
-                {{ isRtl() ? $metaBanner->description : $metaBanner->description_en }}
-            </div>
+        <div class="overlay-banner"></div>
+        
+        <div class="border pt-5 title--banner" >
+            <b class="text-center p-2 w3-round-xxlarge  text-white  mb-4 " style="    font-size: x-large;">{{ isRtl() ? $metaBanner->title : $metaBanner->title_en }}</b>
+            <br>
+            <svg width="167" height="8" viewBox="0 0 167 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="167" height="8" fill="url(#paint0_linear_64_701)"/>
+                <defs>
+                <linearGradient id="paint0_linear_64_701" x1="0" y1="4" x2="167" y2="4" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#B58050"/>
+                <stop offset="1" stop-color="#4F3823"/>
+                </linearGradient>
+                </defs>
+            </svg>
+                
         </div>
     </div>
     <!-- Page Header End -->
@@ -28,8 +37,9 @@
         <div class="container ">
             <div class="row pt-5 g-5 mb-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="" src="{{ asset($about->image) }}" alt="" style="object-fit: cover;">
-
+                    <img class=""  src="{{ asset($about->image) }}" alt="" style="object-fit: cover; border-top-left-radius: 500px;
+                    border-top-right-radius: 500px;">
+    
                 </div>
                 <div class="col-lg-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="p-4">
@@ -65,7 +75,7 @@
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-md-2 col-lg-2 col-4">
+                        <div class="col-lg-2 col-4">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -108,7 +118,7 @@
 
 
                         </div>
-                        <div class="col-md-9 col-lg-9 col-12">
+                        <div class=" col-lg-9 col-12">
                             <h3 class="">{{ __('lang.our_vision') }}</h3>
                             <div class="text-dark fs-5 pt-3">
                                 {{ getSettingValue('our_vision_' . app()->getLocale()) }}
@@ -124,7 +134,7 @@
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-md-2 col-lg-2 col-4">
+                        <div class="col-lg-2 col-4">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -152,7 +162,7 @@
 
 
                         </div>
-                        <div class="col-md-9 col-lg-9 col-12">
+                        <div class=" col-lg-9 col-12">
                             <h3 class="">{{ __('lang.goals') }}</h3>
                             <div class="text-dark fs-5 pt-3">
                                 {{ getSettingValue('goals_' . app()->getLocale()) }}
@@ -165,7 +175,7 @@
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-md-2 col-lg-2 col-4">
+                        <div class="col-lg-2 col-4">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -187,7 +197,7 @@
                             </svg>
 
                         </div>
-                        <div class="col-md-9 col-lg-9 col-12">
+                        <div class=" col-lg-9 col-12">
                             <h3 class="">{{ __('lang.our_value') }}</h3>
                             <div class="text-dark fs-5 pt-3">
                                 {{ getSettingValue('rate_us_' . app()->getLocale()) }}
@@ -200,7 +210,7 @@
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-md-2 col-lg-2 col-4">
+                        <div class="col-lg-2 col-4">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -228,7 +238,7 @@
 
 
                         </div>
-                        <div class="col-md-9 col-lg-9 col-12">
+                        <div class=" col-lg-9 col-12">
                             <h3 class="">{{ __('lang.our_ambition') }}</h3>
                             <div class="text-dark fs-5 pt-3">
                                 {{ getSettingValue('our_message_' . app()->getLocale()) }}
@@ -244,7 +254,7 @@
     </div>
     <div class="row mt-5">
         <div class="col-md-4" style="padding: 0px!important;">
-            <img src="{{ asset($aboutsec->image) }}" alt="">
+            <img src="{{ asset($aboutsec->image) }}" alt="" style="width: 100%; height: 100%;">
         </div>
         <div class="col-md-8"
             style="background-image: url({{ asset('front/images/aboutbg.png') }}); background-size:cover">
@@ -262,67 +272,7 @@
 
     </div>
     <br><br>
-    <section class="container">
-        <div class="row">
-            <div class="d-flex m-auto justify-content-center align-items-end wow zoomIn" style="">
-                <div class="d-flex m-auto justify-content-center align-items-center gap-4 wow zoomIn" style="">
-                    <svg width="281" height="3" viewBox="0 0 281 3" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <line x1="280.5" y1="1.5" x2="0.5" y2="1.49998" stroke="#B58050"
-                            stroke-width="2" />
-                    </svg>
-
-                    <div class=" text-center d-flex  gap-2">
-
-                        @php
-                            $words = explode(' ', __('lang.Why_chooseus'));
-
-                        @endphp
-                        <b class="text-center fs-3 ">
-                            @foreach ($words as $word)
-                                <span class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
-                            @endforeach
-                        </b><br><br>
-
-                    </div>
-                    <svg width="281" height="3" viewBox="0 0 281 3" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <line x1="280.5" y1="1.5" x2="0.5" y2="1.49998" stroke="#B58050"
-                            stroke-width="2" />
-                    </svg>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="pt-3">
-            <div class="row m-0">
-
-                <div class="col-md-6 pt-5 p-5" style="background-color: #10312B">
-                    @foreach ($features as $feature)
-                        <div class="border w3-round-xlarge mb-4 p-4">
-                            <div class="row">
-                                <div class="col-md-2 text-center">
-                                    <div class="border w3-round-xlarge p-3">
-                                        <img src="{{ asset($feature->image) }}" alt="" style="width: 40px;">
-                                    </div>
-                                </div>
-                                <div class="col-md-10">
-                                    <h4 class="text-light">{{ $feature->title }}</h4>
-                                    <p class="text-light">{{ $feature->description }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-                <div class="col-md-6"
-                    style="background-image:url({{ asset('front/images/about2.png') }}); background-size:cover; background-position: bottom;">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('front.home.features', ['features' => $features])
     <br><br>
     <section class="container">
         <div class="row">
@@ -371,7 +321,7 @@
             </div>
         </div>
     </section>
-
+    <br><br>
 
 
     <!-- About End -->
@@ -396,24 +346,25 @@
         // alert(videoId);
         $('.owl-carousel').owlCarousel({
             nav: true,
-
+            loop: true,
             margin: 10,
             autoWidth: true,
             rtl: {{ isRtl() ? 'true' : 'false' }},
             responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayspeed: 2000,
+            nav: false,
+            dots:true,
             responsive: {
                 0: {
-                    items: 1,
-                    nav: true
+                    items: 1
                 },
                 600: {
-                    items: 3,
-                    nav: true
+                    items: 3
                 },
                 1000: {
-                    items: 5,
-                    nav: true,
-                    loop: true
+                    items: 5
                 }
             }
 

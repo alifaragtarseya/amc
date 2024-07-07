@@ -18,7 +18,8 @@ class AboutController extends Controller
     }
     public function indexSec()
     {
-        $data = About::latest('id')->first() ?? new About();
+        $data = About::find(2) ?? new About();
+
         return view('dashboard.about-us.formsec', compact('data'));
     }
 
@@ -45,9 +46,14 @@ class AboutController extends Controller
             $inputs['image'] = uploadImage($inputs['image'], config('path.ABOUT_PATH'), $inputs['en']['title']);
         }
         // dd($inputs);
-        $data = About::latest('id')->first();
+        $data = About::find(2);
 
-        $data->update($inputs);
+        if (!$data) {
+            $data = About::create($inputs);
+        } else {
+            $data->update($inputs);
+        }
+
 
 
         toast(__('lang.updated'), 'success');

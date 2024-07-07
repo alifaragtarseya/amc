@@ -2,7 +2,8 @@
     <div class="container ">
         <div class="row pt-5 g-5 mb-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class=""  src="{{ asset($about->image) }}" alt="" style="object-fit: cover;">
+                <img class=""  src="{{ asset($about->image) }}" alt="" style="object-fit: cover; border-top-left-radius: 500px;
+                border-top-right-radius: 500px;">
 
             </div>
             <div class="col-lg-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">

@@ -112,7 +112,7 @@
           </li>
           <li class="menu-item {{ request()->routeIs('admin.aboutsec')?'active':'' }}">
             <a href="{{ route('admin.aboutsec') }}"  class="menu-link ">
-              <div data-i18n="CRM">{{ __('lang.about_us') }}</div>
+              <div data-i18n="CRM">{{ __('lang.about_us') }} 2</div>
             </a>
           </li>
           <li class="menu-item {{ request()->routeIs('admin.step')?'active':'' }}">
