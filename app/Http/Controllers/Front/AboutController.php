@@ -21,7 +21,7 @@ class AboutController extends Controller
             'parteners' => \App\Models\Partener::parteners()->get(),
             'features' => \App\Models\Feature::get(),
             'teams' => \App\Models\Team::get(),
-
+            'aboutsec'  => \App\Models\About::latest('id')->first()
         ]);
     }
 }

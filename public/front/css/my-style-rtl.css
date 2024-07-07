@@ -105,10 +105,12 @@ div.soical-media a{
 
 
 .cat--item.cat-active{
-    border: 1px solid var(--secondary);
-    border-radius: 12px;
+    /* border: 1px solid var(--secondary); */
+    /* border-radius: 18px; */
     padding: 10px;
-    color: var(--secondary);
+    background-color:#B58050 ;
+    color: white;
+    border-radius: 24px 0px;
 }
 .cat--item{
     padding: 10px;

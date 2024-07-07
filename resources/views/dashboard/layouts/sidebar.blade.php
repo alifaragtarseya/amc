@@ -98,14 +98,20 @@
       </li>
 
       {{-- about --}}
-      <li class="menu-item {{ request()->routeIs('admin.about') ||request()->routeIs('admin.step*')||request()->routeIs('admin.team*') || request()->is('admin-panel/metatags/about')?'active open':'' }}">
+      <li class="menu-item {{ request()->routeIs('admin.about')  ||request()->routeIs('admin.step*')||request()->routeIs('admin.team*') || request()->is('admin-panel/metatags/about')?'active open':'' }}">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-info-circle"></i>
           <div data-i18n="home">{{ __('lang.about') }}</div>
         </a>
         <ul class="menu-sub">
+          
           <li class="menu-item {{ request()->routeIs('admin.about')?'active':'' }}">
             <a href="{{ route('admin.about') }}"  class="menu-link ">
+              <div data-i18n="CRM">{{ __('lang.about_us') }}</div>
+            </a>
+          </li>
+          <li class="menu-item {{ request()->routeIs('admin.aboutsec')?'active':'' }}">
+            <a href="{{ route('admin.aboutsec') }}"  class="menu-link ">
               <div data-i18n="CRM">{{ __('lang.about_us') }}</div>
             </a>
           </li>

@@ -259,7 +259,9 @@ Route::group(['middleware' => 'auth:admin'], function () use ($prefix) {
     Route::group(['prefix' => '/about-us'], function () use ($prefix) {
         Route::controller('AboutController')->group(function () use ($prefix)  {
             Route::get('/', 'index')->name($prefix.'about');
+            Route::get('/Sec', 'indexSec')->name($prefix.'aboutsec');
             Route::post('/save-data', 'saveData')->name($prefix.'about.saveData');
+            Route::post('/save-data-sec', 'saveDataSec')->name($prefix.'about.saveDatasec');
         });
     });
 

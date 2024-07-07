@@ -28,10 +28,10 @@ class StoreProject extends FormRequest
             'image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
             'ar.title' => ['required','string'],
             'ar.description' => ['required'],
-            'ar.short_description' => ['required'],
+            // 'ar.short_description' => ['required'],
             'en.title' => ['required','string'],
             'en.description' => ['required'],
-            'en.short_description' => ['required'],
+            // 'en.short_description' => ['required'],
         ];
     }
 }
