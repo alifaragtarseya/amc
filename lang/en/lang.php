@@ -403,7 +403,7 @@ return [
     'best_size' => 'Best Size :- ',
     'hello_to_trust' => 'Hello To Trust',
     'lets_contact' => 'Lets Contact',
-    'about_trust' => 'About Trust',
+    'about_trust' => 'About Company',
     'our_features' => 'Our Features',
     'our_protfolio' =>'Our Protfolio',
     'our_feature_projects' => 'Our Feature Projects',
@@ -445,5 +445,7 @@ return [
     'bg_feature' => 'Feature Image In Home Page',
     'our_projects' => 'OUR PROJECTS',
     'our_partners' => 'OUR PARTNERS',
-
+    'our_ambition'  => 'OUR AMBITION',
+    'goals'         => 'OUR GOALS',
+    'Why_chooseus' => 'WHY CHOOSE US'
  ];

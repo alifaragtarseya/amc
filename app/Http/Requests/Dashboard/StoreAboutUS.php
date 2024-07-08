@@ -26,7 +26,7 @@ class StoreAboutUS extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['nullable','image','mimes:png,jpg,jpeg','dimensions:width=543,height=482',Rule::requiredIf(function(){ return !isset(About::first()->id);})],
+            'image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset(About::first()->id);})],
             'ar.title' => ['required','string'],
             'ar.description' => ['required'],
             'ar.short_description' => ['required'],

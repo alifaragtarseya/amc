@@ -41,7 +41,7 @@
 
             <div class="col-md-12">
                 <div class="row">
-                    <div class="owl-carousel" id="parteners--owl">
+                    <div class="owl-carousel" id="parteners--owl" style="direction: ltr">
 
                         @foreach ($parteners as $item)
                             <div class="item m-2">

@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="col-md-6 p-0">
-            <img src="{{ asset(getSettingValue('bg_feature')) }}" alt="{{ getSettingValue('site_name_'.app()->getLocale()) }}">
+            <img src="{{asset('front/images/about2.png')}}" alt="{{ getSettingValue('site_name_'.app()->getLocale()) }}" style="width: 100%; height: 100%">
         </div>
 
 

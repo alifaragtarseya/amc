@@ -87,6 +87,19 @@ if (!function_exists('responseJson')) {
     }
 }
 
+if (!function_exists('isTablet')) {
+    function isTablet()
+    {
+        $useragent = $_SERVER['HTTP_USER_AGENT'];
+
+        if (preg_match('/ipad|android(?!.*mobile)|android(?!.*windows)|kindle|playbook|silk/i', $useragent)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
 /**
  * response json
  */
