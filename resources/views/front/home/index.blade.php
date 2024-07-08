@@ -106,7 +106,7 @@
             dots:true,
             responsive: {
                 0: {
-                    items: 2,
+                    items: 1,
                 },
                 600: {
                     items: 3,
@@ -156,7 +156,17 @@
         $('#youtube_link').html(iframeMarkup);
         // alert(videoId);
 
+        // function showScreenDimensions() {
+        //     var width = window.innerWidth;
+        //     var height = window.innerHeight;
+        //     alert('Width: ' + width + 'px, Height: ' + height + 'px');
+        // }
 
+        // // Show dimensions when the page loads
+        // showScreenDimensions();
+
+        // // Update dimensions when the window is resized
+        // window.addEventListener('resize', showScreenDimensions);
 
 
 

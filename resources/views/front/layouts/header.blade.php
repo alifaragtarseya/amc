@@ -1,5 +1,5 @@
 <!-- Navbar Start -->
-<div class="{{ !request()->routeIs('front.home') ? 'bg-liner' : '' }}">
+<div class="{{ !request()->routeIs('front.home') || isMobile() || isTablet()  ? 'bg-liner' : ''  }}">
     <div class="container p-3">
         <nav class="navbar round-100-0 navbar-expand-lg  w3-white sticky-top " style="padding: 5px  15px"
             dir="{{ isRtl() ? 'rtl' : 'ltr' }}">
