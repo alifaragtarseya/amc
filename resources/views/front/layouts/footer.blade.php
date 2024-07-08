@@ -40,11 +40,11 @@
         </div>
     </div>
  </div> --}}
-<div class="  footer 5" style="background: #182210" data-wow-delay="0.1s">
+<div class="footer 5" style="background: #182210" data-wow-delay="0.1s">
     <div class="p-5">
-        <div class="container pt-5 py-5 border">
-            <div class="row pt-5 p-5">
-                <div class="col-md-4">
+        <div class="container pt-5 py-5 border w3-round-xlarge">
+            <div class="row pt-5 p-5 row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 ">
+                <div class="col-lg-3 col-md-6 offset-lg-1">
                     <h1 class="text-white mb-4">
                         <img style="width: 140px" class=" me-3" src="{{ asset(getSettingValue('logo_white')) }}"
                             alt="">
@@ -52,7 +52,7 @@
                     <p class="text-light" style="font-weight: 300 !important">
                         {{ getSettingValue('short_description_' . app()->getLocale()) }}
                     </p>
-                    <div class="d-flex pt-2  footer--links">
+                    <div class="d-flex w-100 pt-2  footer--links">
                         @if (getSettingValue('facebook_link'))
                             <a href="{{ getSettingValue('facebook_link') }}"
                                 class="text-white {{ isRtl() ? ' ms-4' : '' }} ">
@@ -117,15 +117,50 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4  ">
-                    <h5 class="text-light mb-4"><b>{{ __('lang.follow_us') }}</b></h5>
-                    <p class="text-light" style="font-weight: 300 !important">
-                        {{ __('lang.follow_us_desc') }}
-                    </p>
-
-                    
+                <div class="col-lg-3  col-md-6 offset-lg-1 ">
+                    <h5 class="text-light mb-4"><b>{{ __('lang.get_in_touch') }}</b></h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="12" height="12" fill="#B58050"/>
+                                </svg>
+                                
+                            <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}" href="{{ url('/') }}">{{ __('lang.home') }}</a></li>
+                        <li class="nav-item mb-2">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="12" height="12" fill="#B58050"/>
+                                </svg>
+                                
+                            <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}" href="{{ route('front.about') }}">{{ __('lang.about_us') }}</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="12" height="12" fill="#B58050"/>
+                                </svg>
+                                
+                            <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
+                                href="{{ route('front.service') }}">{{ __('lang.services') }}</a>
+                        </li>
+                        <li>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="12" height="12" fill="#B58050"/>
+                                </svg>
+                                
+                            <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
+                                href="{{ route('front.product') }}">{{ __('lang.our_work') }}</a>
+                        </li>
+                        <li>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="12" height="12" fill="#B58050"/>
+                                </svg>
+                                
+                            <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
+                                href="{{ route('front.contact') }}">{{ __('lang.contact') }}</a>
+                        </li>
+                        
+                    </ul>                    
                 </div>
-                <div class="col-lg-4  ">
+                <div class="col-lg-4  col-md-12">
                     <h5 class="text-light mb-4"><b>{{ __('lang.get_in_touch') }}</b></h5>
                     <p class="text-light mb-3"
                         style="font-weight: 400 !important;  display: flex;align-items: flex-start; gap:5px">
@@ -174,7 +209,7 @@
                         {{ getSettingValue('phone') }}
                     </p>
                 </div>
-                
+
             </div>
 
         </div>

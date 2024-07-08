@@ -354,10 +354,7 @@ div.soical-media a{
 
     }
 
-    .footer--links{
-        flex-wrap: wrap;
-
-    }
+    
     .home--slider {
         height: 150vh !important;
     }
@@ -390,10 +387,7 @@ div.soical-media a{
         padding: 5px !important;
 
     }
-    .footer--links{
-        flex-wrap: wrap;
-
-    }
+    
     .home--slider {
         height: 150vh !important;
     }
@@ -426,10 +420,7 @@ div.soical-media a{
         margin: 0px -46px !important;
         width: 100% !important;
     }
-    .footer--links{
-        flex-wrap: wrap;
-
-    }
+    
     .youtube_link iframe{
         height: 200px !important;
     }
@@ -487,10 +478,7 @@ div.soical-media a{
         margin: 0px -50px !important;
         width: 100% !important;
     }
-    .footer--links{
-        flex-wrap: wrap;
-
-    }
+    
 }
 @media screen and (min-width: 412px) and (max-width: 425px) {
     .lap--view{
@@ -530,10 +518,7 @@ div.soical-media a{
         padding: 5px !important;
 
     }
-    .footer--links{
-        flex-wrap: wrap;
-
-    }
+    
     .youtube_link iframe{
         height: 200px !important;
     }
@@ -580,10 +565,7 @@ div.soical-media a{
     width: 100% !important;
     padding: 5px !important;
     }
-    .footer--links{
-        flex-wrap: wrap;
-
-    }
+   
     .youtube_link iframe{
         height: 200px !important;
     }
@@ -636,7 +618,7 @@ div.soical-media a{
         padding: 10px !important;
 
     }
-    .footer--links,.feature--item{
+    .feature--item{
         flex-wrap: wrap;
 
     }
@@ -705,7 +687,7 @@ div.soical-media a{
         padding: 10px !important;
 
     }
-    .footer--links,.feature--item{
+    .feature--item{
         flex-wrap: wrap;
 
     }
@@ -784,7 +766,7 @@ div.soical-media a{
         padding: 10px !important;
 
     }
-    .footer--links,.feature--item{
+    .feature--item{
         flex-wrap: wrap;
 
     }
@@ -863,7 +845,7 @@ div.soical-media a{
         width: 65% !important;
         padding: 10px !important;
     }
-    .footer--links,.feature--item{
+    .feature--item{
         flex-wrap: wrap;
 
     }

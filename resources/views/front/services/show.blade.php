@@ -29,7 +29,7 @@
 
 
         <div class="row">
-            <div class="col-md-4 p-5 container">
+            <div class="col-md-12 col-lg-4 p-5 container">
 
                 <div class="">
                     <ul class="w3-ul">
@@ -51,7 +51,7 @@
 
             </div>
             @if ($service->description)
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="" style="font-weight: 400 !important;">
 
                         {{ $service->short_description }}
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             @endif
-            <div class="col-md-4  p-2 w3-round-large">
+            <div class="col-md-12 col-lg-4  p-2 w3-round-large">
                 
                 <img class="" style="height: 450px;width: 100%;border-radius: 24px 0px!important;"
                     src="{{ asset($service->image) }}" alt="">
