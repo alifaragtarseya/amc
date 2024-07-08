@@ -389,4 +389,7 @@ return [
     'why_choose_us'      => 'لماذا تختارنا',
     'our_partners'      => 'شركاءنا',
     'service_details'    => 'تفاصيل الخدمة',
+    'view_services'      => 'عرض الخدمات',
+    'title_contact_us'  => 'هل أنت مستعد لتجديد منزلك ؟',
+    'contact_us_desc'    => 'اطلب استشارة مجانية ودعنا نفعل ذلك !',
 ];

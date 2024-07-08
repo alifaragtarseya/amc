@@ -125,7 +125,7 @@ ul {
 
 p {
   font-size: 15px;
-  line-height: 30px;
+  /* line-height: 50px; */
   font-weight: 300;
   color: #afafaf;
 }

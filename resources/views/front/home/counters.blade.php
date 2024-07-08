@@ -6,7 +6,7 @@
                 @forelse ($counters as $item)
 
 
-                <div class="col-md-6 col-lg-3 m-auto">
+                <div class="col-md-6 col-lg-3 m-auto mb-4">
                     <div class=" text-center  counter--item">
                         <img src="{{ asset($item->image) }}" style="width:80px;height:80px " alt="">
 

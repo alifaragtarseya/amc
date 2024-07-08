@@ -35,40 +35,58 @@
 
         </div>
 
-        <div class="row pt-3 mb-5 facts-counter ">
-            <div class="col-md-5">
-                <div class="row">
-
-                    @foreach ($products->take(2) as $item)
-                        <div class="col-md-12 pt-3">
-                            <a href="{{ route('front.product.show',$item->id) }}">
-                                <div class="project--item">
-                                    <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" class="image">
-                                    <div class="overlay">
-                                        <div class="text">{{ $item->title }}</div>
-                                    </div>
-                                </div>
-                            </a>
+        @if (isMobile())
+        <div class="row">
+            @foreach ($products as $item)
+                <div class="col-md-12 mb-3">
+                    <a href="{{ route('front.product.show',$item->id) }}">
+                        <div class="project--item">
+                            <img style="border-radius: 20px;" src="{{ asset($item->image) }}" alt="{{ $item->title }}" >
+                            <div class="overlay">
+                                <div class="text">{{ $item->title }}</div>
+                            </div>
                         </div>
-                    @endforeach
+                    </a>
                 </div>
-            </div>
-            <div class="col-md-7">
-                <div class="row">
-                    @foreach ($products->skip(2)->take(4) as $item)
-                        <div class="col-md-6 pt-3">
-                            <a href="{{ route('front.product.show',$item->id) }}">
-                                <div class="project--item">
-                                    <img src="{{ asset($item->image) }}" style="{{ $loop->iteration == 3 ||$loop->iteration == 4? 'width: 100%;height: 470px;' : '' }}" alt="{{ $item->title }}" class="image">
-                                    <div class="overlay">
-                                        <div class="text">{{ $item->title }}</div>
-                                    </div>
-                                </div></a>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
+            @endforeach
         </div>
+        @else
+            <div class="row pt-3 mb-5 facts-counter ">
+                <div class="col-md-5">
+                    <div class="row">
+
+                        @foreach ($products->take(2) as $item)
+                            <div class="col-md-12 pt-3">
+                                <a href="{{ route('front.product.show',$item->id) }}">
+                                    <div class="project--item">
+                                        <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" class="image">
+                                        <div class="overlay">
+                                            <div class="text">{{ $item->title }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        @foreach ($products->skip(2)->take(4) as $item)
+                            <div class="col-md-6 pt-3">
+                                <a href="{{ route('front.product.show',$item->id) }}">
+                                    <div class="project--item">
+                                        <img src="{{ asset($item->image) }}" style="{{ $loop->iteration == 3 ||$loop->iteration == 4? 'width: 100%;height: 470px;' : '' }}" alt="{{ $item->title }}" class="image">
+                                        <div class="overlay">
+                                            <div class="text">{{ $item->title }}</div>
+                                        </div>
+                                    </div></a>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        @endif
+        
         <div class="text-center pt-4">
             <a href="{{ route('front.product') }}" class="btn btn--custom border-white">
 

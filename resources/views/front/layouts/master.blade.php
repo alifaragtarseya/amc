@@ -28,6 +28,9 @@
     --light: #F6F7FC;
     --dark: #15233C;
 }
+
+
+
     </style>
      @include('front.layouts.css')
 </head>

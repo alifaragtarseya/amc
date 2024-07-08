@@ -33,8 +33,8 @@
                 <img style="border-radius: 24px 0px!important;height: 400px;" src="{{ asset($product->image) }}"
                     alt="" data-zoom-image="{{ asset($product->image) }}">
             </div>
-            <div class="col-md-4 pt-2 position-relative offset-md-1">
-                <div class="position-absolute top-50 start-0 translate-middle-y">
+            <div class="col-md-4  pt-2 p offset-md-1">
+                <div class="" style="margin-top: 120px">
                     <b class=" p-3" style="border-radius: 24px 0px!important;background-color:#F8F2EE; color:#B58050">{{ __('lang.project_details') }}</b>
                     <h3 class="mt-5">{{ $product->title }}</h3>
                 </div>
@@ -47,7 +47,7 @@
         <div class="row pt-4">
 
             @if ($product->description)
-                <div class="col-7">
+                <div class="col-12 col-md-7">
 
                     
                     <div class="desc pt-3 w3-round-large">
@@ -57,7 +57,7 @@
                         {!! $product->description !!}
                     </div>
                 </div>
-                <div class="col-4 position-relative offset-md-1">
+                <div class="col-md-4 col-12 position-relative offset-md-1">
                     <table class="table table-borderless">
                         <tr>
                             <td>{{ __('lang.customer_name') }}</td>

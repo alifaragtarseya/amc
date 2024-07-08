@@ -447,5 +447,8 @@ return [
     'our_partners' => 'OUR PARTNERS',
     'our_ambition'  => 'OUR AMBITION',
     'goals'         => 'OUR GOALS',
-    'Why_chooseus' => 'WHY CHOOSE US'
+    'Why_chooseus' => 'WHY CHOOSE US',
+    'view_services' => 'View services',
+    'title_contact_us'  => 'are you ready to makeover your home ?',
+    'contact_us_desc'    => 'Request free consultation and lets do it !',
  ];

@@ -1,14 +1,16 @@
 <br><br>
-<section class="contact--section ">
+<section class="contact--section {{ isMobile() ? 'pt-5' : '' }}"  style="{{ !isMobile() ? 'height: 200px':'' }}"">
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="text-white ">
+        <div class="{{ isMobile() ? 'text-center':'d-flex justify-content-between' }} align-items-center">
+            <div class="text-white mb-2">
                 <h3>
-                    Are you ready to makeover your home?
+                    {{ __('lang.title_contact_us') }}
                 </h3>
-                <p>request free consultation and lets do it!</p>
+                <p>
+                    {{ __('lang.contact_us_desc') }}
+                </p>
             </div>
-            <a href="{{ route('front.contact') }}" class="btn btn--custom">
+            <a href="{{ route('front.contact') }}" class="btn btn--custom mb-5">
                 <div class="d-flex align-items-center gap-4">
                     <span>{{ __('lang.get_in_touch') }}</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +20,7 @@
                 </div>
 
             </a>
-            <img src="{{ asset(getSettingValue('contact_image')) }}" style="width: 300px;position: relative;top: -35px" alt="">
+            <img src="{{ asset(getSettingValue('contact_image')) }}" style="{{ isMobile() ? '' : 'width: 300px;position: relative;top: -35px' }}"  alt="">
         </div>
     </div>
 </section>

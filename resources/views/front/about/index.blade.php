@@ -71,11 +71,11 @@
 
     <div class="pt-5 mb-5 container">
         <div class="row">
-            <div class="col-md-6 pb-4">
+            <div class="col-md-6 mb-4 pb-4">
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-lg-2 col-4">
+                        <div class="col-lg-2 col-4 mb-3">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -129,12 +129,12 @@
 
 
             </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6 mb-4 ">
 
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-lg-2 col-4">
+                        <div class="col-lg-2 col-4 mb-3">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -171,11 +171,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6  ">
+            <div class="col-md-6 mb-4  ">
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-lg-2 col-4">
+                        <div class="col-lg-2 col-4 mb-3">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -206,11 +206,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6 mb-4 ">
                 <div class=" card  mission-item p-5 "
                     style="border: 1px solid #B58050!important; border-radius: 12px!important;">
                     <div class="row ">
-                        <div class="col-lg-2 col-4">
+                        <div class="col-lg-2 col-4 mb-3">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
