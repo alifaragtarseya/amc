@@ -3,7 +3,7 @@
 @section('content')
     <!-- Page Header Start -->
 
-    <div class="container-fluid page-header p-0 pt-5" style="background-image: url({{ asset($metaBanner->image) }});"
+    <div class="container-fluid page-header p-0 pt-5 mb-5" style="background-image: url({{ asset($metaBanner->image) }});"
         data-wow-delay="0.1s">
         <div class="overlay-banner"></div>
         
@@ -22,7 +22,7 @@
                 
         </div>
     </div>
-    <br><br><br><br>
+    <br><br><br><br><br>
     <div class="container p-3">
         {{-- <h3 class="text-center sec-color">{{ __('lang.we_create_digital_products') }}</h3> --}}
         <div class="d-flex  flex-wrap justify-content-center gap-3">
@@ -41,7 +41,7 @@
         <div class="row">
 
             @forelse ($products as $item)
-                <div class="col-md-4  ">
+                <div class="col-md-4  mb-5">
                     <a href="{{ route('front.product.show',$item->id) }}">
                         <div class="project--item" >
                             <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" style="border-radius: 24px 0px!important;" >
