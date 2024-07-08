@@ -44,7 +44,7 @@
     <div class="p-5">
         <div class="container pt-5 py-5 border w3-round-xlarge">
             <div class="row pt-5 p-5 row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 ">
-                <div class="col-lg-3 col-md-6 offset-lg-1">
+                <div class="col-lg-3  col-md-5 offset-lg-1 {{ !isTablet() && !isMobile() ? 'border-end' : '' }} ">
                     <h1 class="text-white mb-4">
                         <img style="width: 140px" class=" me-3" src="{{ asset(getSettingValue('logo_white')) }}"
                             alt="">
@@ -117,7 +117,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3  col-md-6 offset-lg-1 ">
+                <div class="col-lg-2  col-md-5 offset-md-1 {{ !isTablet() && !isMobile() ? 'border-end' : '' }}  ">
                     <h5 class="text-light mb-4"><b>{{ __('lang.get_in_touch') }}</b></h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
@@ -160,7 +160,7 @@
                         
                     </ul>                    
                 </div>
-                <div class="col-lg-4  col-md-12">
+                <div class="col-lg-3 col-md-6 offset-lg-1 ">
                     <h5 class="text-light mb-4"><b>{{ __('lang.get_in_touch') }}</b></h5>
                     <p class="text-light mb-3"
                         style="font-weight: 400 !important;  display: flex;align-items: flex-start; gap:5px">
