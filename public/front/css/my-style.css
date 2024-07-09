@@ -1070,3 +1070,12 @@ div.soical-media a{
 .owl-dots button.active {
     background-color: #B58050;
 }
+
+.text-slider-mobile {
+    line-height: 17px !important;
+    font-size: 10px;
+}
+.text-slider-mobile * {
+    line-height: 17px !important;
+    /* font-size: 10px; */
+}
