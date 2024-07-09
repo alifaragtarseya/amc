@@ -27,12 +27,12 @@
         
 
         <div class="row pt-3">
-            <div class="col-md-6">
+            <div class="col-12 col-md-12 col-lg-6">
                 <div class="row">
                     <div class="col-12 mb-5 ">
                         <div class="row">
-                            <div class="col-2">
-                                <svg width="120" height="120" viewBox="0 0 72 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="col-md-2 col-4">
+                                <svg width="120" height="120" viewBox="0 0 72 128" fill="none" xmlns="http://www.w3.org/2000/svg" style="{{ isRtl() ? 'transform: rotateY(181deg);' : '' }}">
                                     <path d="M0 12C0 5.37258 5.37258 0 12 0H72V128H12C5.37258 128 0 122.627 0 116V12Z" fill="#10312B"/>
                                     <rect width="48" height="48" transform="translate(12 40)" fill="#10312B"/>
                                     <g clip-path="url(#clip0_74_10745)">
@@ -52,7 +52,7 @@
                                     </defs>
                                 </svg>
                             </div> 
-                            <div class="col-10 pt-3" style="background-color: #F8F2EE">
+                            <div class="col-md-10 col-8 pt-3" style="background-color: #F8F2EE">
                                 <h3 class="fd-bold" style="color: #B58050">whatsapp</h3>
                                 <a href="tel:{{ getSettingValue('phone') }}">
                                     <b class="text-dark fs-6">{{ getSettingValue('phone') }}</b>
@@ -65,8 +65,8 @@
                     
                     <div class="col-12 pt-3 mb-5 ">
                         <div class="row">
-                            <div class="col-2">
-                                <svg width="120" height="120" viewBox="0 0 72 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="col-md-2 col-4">
+                                <svg width="120" height="120" viewBox="0 0 72 128" fill="none" xmlns="http://www.w3.org/2000/svg" style="{{ isRtl() ? 'transform: rotateY(181deg);' : '' }}">
                                     <path d="M0 12C0 5.37258 5.37258 0 12 0H72V128H12C5.37258 128 0 122.627 0 116V12Z" fill="#10312B"/>
                                     <rect width="48" height="48" transform="translate(12 40)" fill="#10312B"/>
                                     <path d="M52 71.0055C52 75.9649 48.416 79.9822 43.952 80H43.936H28.08C23.632 80 20 76.0005 20 71.0411V71.0233C20 71.0233 20.0096 63.1558 20.0224 59.1989C20.024 58.4559 20.792 58.0399 21.3152 58.5021C25.1168 61.8528 31.9152 67.9623 32 68.0423C33.136 69.0537 34.576 69.6243 36.048 69.6243C37.52 69.6243 38.96 69.0537 40.096 68.0227C40.1808 67.9605 46.8272 62.0341 50.6864 58.6283C51.2112 58.1644 51.9824 58.5803 51.984 59.3216C52 63.2482 52 71.0055 52 71.0055Z" fill="#B58050"/>
@@ -74,7 +74,7 @@
                                 </svg>
                                     
                             </div>
-                            <div class="col-10 pt-3" style="background-color: #F8F2EE">
+                            <div class="col-md-10 col-8 pt-3" style="background-color: #F8F2EE">
                                 <h3 class="fd-bold" style="color: #B58050">email</h3>
                                 <a href="mailto:{{ getSettingValue('email_2') }}">
                                     <b class="text-dark fs-6">{{ getSettingValue('email_2') }}</b>
@@ -84,15 +84,15 @@
                     </div>
                     <div class="col-12 pt-3 mb-5">
                         <div class="row">
-                            <div class="col-2" >
-                                <svg width="120" height="120" viewBox="0 0 72 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="col-md-2 col-4" >
+                                <svg width="120" height="120" viewBox="0 0 72 128" fill="none" xmlns="http://www.w3.org/2000/svg" style="{{ isRtl() ? 'transform: rotateY(181deg);' : '' }}">
                                     <path d="M0 12C0 5.37258 5.37258 0 12 0H72V128H12C5.37258 128 0 122.627 0 116V12Z" fill="#10312B"/>
                                     <rect width="48" height="48" transform="translate(12 40)" fill="#10312B"/>
                                     <path d="M28.0723 45.8951C33.0662 43.3269 39.2046 43.3718 44.1517 46.0127C49.0502 48.7074 52.0273 53.5166 51.9998 58.69C51.8856 63.8294 48.6932 68.6605 44.7028 72.3952C42.3996 74.5604 39.8231 76.475 37.0259 78.0999C36.7378 78.2474 36.4223 78.3461 36.0948 78.3912C35.7797 78.3793 35.4727 78.2969 35.2017 78.1513C30.9313 75.7098 27.1848 72.5933 24.1425 68.9517C21.5968 65.912 20.1505 62.2395 20 58.433L20.0114 57.8793C20.2193 52.9106 23.2567 48.3716 28.0723 45.8951ZM38.0737 54.1854C36.0436 53.4216 33.703 53.8366 32.1447 55.2365C30.5865 56.6364 30.118 58.7452 30.9581 60.5781C31.7981 62.4111 33.781 63.6067 35.9808 63.6067C37.422 63.6159 38.8073 63.105 39.8281 62.1878C40.849 61.2707 41.4205 60.0235 41.4155 58.7242C41.4231 56.741 40.1039 54.9492 38.0737 54.1854Z" fill="white"/>
                                     <path d="M35.9999 84C42.3117 84 47.4284 83.0943 47.4284 81.977C47.4284 80.8597 42.3117 79.954 35.9999 79.954C29.688 79.954 24.5713 80.8597 24.5713 81.977C24.5713 83.0943 29.688 84 35.9999 84Z" fill="#B58050"/>
                                 </svg>
                             </div>
-                            <div class="col-10" style="background-color: #F8F2EE">
+                            <div class="col-md-10 col-8" style="background-color: #F8F2EE">
                                 <h3 class="fd-bold" style="color: #B58050">Our Location</h3>
                                 <b class="text-dark fs-6">{{ getSettingValue('address_' . App::getLocale()) }}</b>
                             </div>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 ">
+            <div class="col-12 col-md-12 col-lg-6 ">
                 <div class="p-5 w3-round-xlarge" style="background-color: #F8F2EE">
                     <form  >
                         <div class="row g-3">

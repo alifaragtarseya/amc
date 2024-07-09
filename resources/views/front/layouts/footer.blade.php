@@ -40,7 +40,7 @@
         </div>
     </div>
  </div> --}}
-<div class="footer 5" style="background: #182210" data-wow-delay="0.1s">
+<div class="footer 5" style="background-image: url({{ asset('front/images/footer-background.png') }}); background-size: cover; background-repeat: no-repeat; background-position: center" data-wow-delay="0.1s">
     <div class="{{ !ismobile() ? 'p-5 ' : 'p-3' }}">
         <div class="container {{ isMobile() ? 'border' : 'pt-5 py-5 border' }} w3-round-xlarge">
             <div class="row   {{ isMobile() ? '' : 'p-5 pt-5' }} row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 ">

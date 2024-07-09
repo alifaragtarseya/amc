@@ -451,4 +451,5 @@ return [
     'view_services' => 'View services',
     'title_contact_us'  => 'are you ready to makeover your home ?',
     'contact_us_desc'    => 'Request free consultation and lets do it !',
+    'our_projects'      => 'Our Projects',
  ];
