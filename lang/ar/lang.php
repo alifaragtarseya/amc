@@ -392,4 +392,5 @@ return [
     'view_services'      => 'عرض الخدمات',
     'title_contact_us'  => 'هل أنت مستعد لتجديد منزلك ؟',
     'contact_us_desc'    => 'اطلب استشارة مجانية ودعنا نفعل ذلك !',
+    'our_projects'      => 'مشاريعنا',
 ];
