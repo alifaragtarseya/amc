@@ -8,10 +8,10 @@
 
                             {{-- <span class="slider--span">{{ __('lang.hello_to_trust') }}</span> --}}
 
-                            <div class="pt-3 {{!isMobile()?'slider--title':''}} title-slider-bg-screen text-slider-mobile" style="">
+                            <div class="pt-3 {{!isMobile()?'slider--title':''}} title-slider-bg-screen {{ isMobile() ? 'text-slider-mobile' : '' }}" style="">
                                 {!! $slider->title !!}
                             </div>
-                            <p class="text-white title-slider-bg-screen text-slider-mobile">
+                            <p class="text-white title-slider-bg-screen {{ isMobile() ? 'text-slider-mobile' : '' }}">
                                 {{ $slider->description }}
                             </p>
 
