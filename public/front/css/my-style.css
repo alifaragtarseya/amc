@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Tajawal:wght@500&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/myriad-pro');
+@import url(https://db.onlinewebfonts.com/c/125063e353c1f65c55ba1e3811969217?family=GE+SS+Two+Medium);
 /* globle style  */
 /*scrollbar width */
 ::-webkit-scrollbar { width: 10px; height: 7px; }
@@ -11,33 +12,10 @@
 ::-webkit-scrollbar-thumb:hover { background: var(--secondary); }
 html,body{
     overflow-x: hidden !important;
+    /* font-family: 'Myriad Pro', sans-serif; */
 }
 
-html,
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-b,
-li,
-a,
-li.a,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-* {
-    /* font-family: 'Source Sans 3', sans-serif; */
-    font-family: 'Tajawal', sans-serif !important;
-    font-weight: 500 ;
-}
+
 .nav-active,.navbar-nav a.nav-item.nav-link:hover{
     color: var(--primary) !important;
     border: 1px solid var(--primary);
@@ -111,7 +89,8 @@ div.soical-media a{
     font-size: 42px;
     line-height: 50px !important;
     font-weight: 700 !important;
-    /* color: var(--secondary) !important; */
+    /* color: var(--primary) !important; */
+
 }
 
 
@@ -120,14 +99,24 @@ div.soical-media a{
     /* border-radius: 18px; */
     padding: 10px;
     background-color:#B58050 ;
-    color: white;
+    color: white!important;
     border-radius: 24px 0px;
 }
 .cat--item{
     padding: 10px;
     color: #fff;
+    border-radius: 24px 0px;
+    border: 1px solid var(--primary);
+    color: var(--primary)!important;
 }
 
+.cat--item a:hover{
+    color: var(--primary)!important;
+}
+
+.cat--item.cat-active a:hover{
+    color: #fff!important;
+}
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
@@ -409,7 +398,7 @@ div.soical-media a{
     .title-slider-bg-screen {
         font-size: 30px!important;
         line-height: 42px !important;
-        font-weight: 700;
+        /* font-weight: 700; */
         margin-bottom: 20px;
     }
     a.btn-big-screen  {

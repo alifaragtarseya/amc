@@ -6,9 +6,9 @@
                 <h3>
                     {{ __('lang.title_contact_us') }}
                 </h3>
-                <p>
+                <h3 class="text-white" style="    font-weight: 100;">
                     {{ __('lang.contact_us_desc') }}
-                </p>
+                </h3>
             </div>
             <a href="{{ route('front.contact') }}" class="btn btn--custom mb-5">
                 <div class="d-flex align-items-center gap-4">
