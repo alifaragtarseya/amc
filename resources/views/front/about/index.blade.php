@@ -43,13 +43,12 @@
                 </div>
                 <div class="col-lg-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="p-4">
-                        <div class="">
-                            <span style="color: #B58050!important">{{ __('lang.about_trust') }}</span>
-                            <br><br>
-                            <h3>{{ $about->title }}</h3>
+                        <div  class="">
+                            <span class="main-color fs-5">{{ __('lang.about') }}</span>
+                            <h3 class="fs-2"><b>{{ $about->title }}</b></h3>
                         </div>
                         <br>
-                        <p class=" text-dark mb-4" style="line-height: 36px;; ">
+                        <p class=" text-dark mb-4" style="line-height: 36px!important;">
                             {{ $about->short_description }}
                         </p>
                         <div>
@@ -322,6 +321,7 @@
         </div>
     </section>
     <br><br>
+    @include('front.home.contact-us')
 
 
     <!-- About End -->

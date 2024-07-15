@@ -92,7 +92,7 @@
                                     <path d="M35.9999 84C42.3117 84 47.4284 83.0943 47.4284 81.977C47.4284 80.8597 42.3117 79.954 35.9999 79.954C29.688 79.954 24.5713 80.8597 24.5713 81.977C24.5713 83.0943 29.688 84 35.9999 84Z" fill="#B58050"/>
                                 </svg>
                             </div>
-                            <div class="col-md-10 col-8" style="background-color: #F8F2EE">
+                            <div class="col-md-10 col-8 pt-3" style="background-color: #F8F2EE">
                                 <h3 class="fd-bold" style="color: #B58050">Our Location</h3>
                                 <b class="text-dark fs-6">{{ getSettingValue('address_' . App::getLocale()) }}</b>
                             </div>
