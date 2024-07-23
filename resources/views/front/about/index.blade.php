@@ -5,6 +5,9 @@
             /* margin: auto; */
             width: 90%;
             color: black;
+            font-size: 20px;
+            font-weight: 600;
+
         }
     </style>
 @endsection
@@ -44,14 +47,14 @@
                 <div class="col-lg-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="p-4">
                         <div  class="">
-                            <span class="main-color fs-5">{{ __('lang.about') }}</span>
+                            <span class="main-color fs-5" style="font-size: 24px !important;">{{ __('lang.about') }}</span>
                             <h3 class="fs-2"><b>{{ $about->title }}</b></h3>
                         </div>
                         <br>
-                        <p class=" text-dark mb-4" style="line-height: 36px!important;">
+                        <p class=" text-dark" style="line-height: 36px;font-size: 24px;font-weight: 400;">
                             {{ $about->short_description }}
                         </p>
-                        <div>
+                        <div class="decription--about" >
                             {!! $about->description !!}
                         </div>
 
@@ -118,8 +121,8 @@
 
                         </div>
                         <div class=" col-lg-9 col-12">
-                            <h3 class="">{{ __('lang.our_vision') }}</h3>
-                            <div class="text-dark fs-5 pt-3">
+                            <h3 class="" style="font-weight: bold;">{{ __('lang.our_vision') }}</h3>
+                            <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('our_vision_' . app()->getLocale()) }}
                             </div>
                         </div>
@@ -162,8 +165,8 @@
 
                         </div>
                         <div class=" col-lg-9 col-12">
-                            <h3 class="">{{ __('lang.goals') }}</h3>
-                            <div class="text-dark fs-5 pt-3">
+                            <h3 class="" style="font-weight: bold;">{{ __('lang.goals') }}</h3>
+                            <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('goals_' . app()->getLocale()) }}
                             </div>
                         </div>
@@ -197,8 +200,8 @@
 
                         </div>
                         <div class=" col-lg-9 col-12">
-                            <h3 class="">{{ __('lang.our_value') }}</h3>
-                            <div class="text-dark fs-5 pt-3">
+                            <h3 class="" style="font-weight: bold;">{{ __('lang.our_value') }}</h3>
+                            <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('rate_us_' . app()->getLocale()) }}
                             </div>
                         </div>
@@ -238,8 +241,8 @@
 
                         </div>
                         <div class=" col-lg-9 col-12">
-                            <h3 class="">{{ __('lang.our_ambition') }}</h3>
-                            <div class="text-dark fs-5 pt-3">
+                            <h3 class="" style="font-weight: bold;">{{ __('lang.our_ambition') }}</h3>
+                            <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('our_message_' . app()->getLocale()) }}
                             </div>
                         </div>

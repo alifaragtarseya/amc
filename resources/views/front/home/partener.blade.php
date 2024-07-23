@@ -21,7 +21,7 @@
                         @endphp
                     <b class="text-center fs-3 " >
                         @foreach ($words as $word)
-                            <span class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
+                            <span style="font-weight: bold;" class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
                         @endforeach
                     </b><br><br>
 

@@ -1,7 +1,7 @@
 <!-- Navbar Start -->
 <div class="{{ !request()->routeIs('front.home') || isMobile() || isTablet() ? 'bg-liner' : '' }}">
     <div class="container p-3">
-        <nav class="navbar round-100-0 navbar-expand-lg  w3-white sticky-top " style="padding: 5px  15px"
+        <nav class="navbar round-100-0 navbar-expand-lg  w3-white sticky-top " style="padding: 10px  15px"
             dir="{{ isRtl() ? 'rtl' : 'ltr' }}">
             <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center">
                 @if (getSettingValue('logo'))
@@ -37,7 +37,7 @@
                     @if (isMobile())
                         <a href="{{ route('front.contact') }}" class="btn btn--custom">
                             <div class="d-flex align-items-center gap-4">
-                                <span>{{ __('lang.get_in_touch') }}</span>
+                                <span style="font-weight: 700!imporatnt;">{{ __('lang.get_in_touch') }}</span>
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -68,7 +68,7 @@
             @if (!isMobile())
                 <a href="{{ route('front.contact') }}" class="btn btn--custom">
                     <div class="d-flex align-items-center gap-4">
-                        <span>{{ __('lang.get_in_touch') }}</span>
+                        <span style="font-weight: 700;">{{ __('lang.get_in_touch') }}</span>
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path

@@ -35,6 +35,14 @@
     {
         height: 100% !important;
     }
-
+    .title--n p {
+        color: #fff !important;
+    }
+    .decription--about * {
+        line-height: 36px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #212121;
+    }
 </style>
 
