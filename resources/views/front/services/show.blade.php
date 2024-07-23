@@ -1,5 +1,15 @@
 @extends('front.layouts.master')
 @section('css')
+<style>
+    .pra p {
+            /* margin: auto; */
+            width: 90%;
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+</style>
 @endsection
 @section('content')
     <!-- Page Header Start -->
@@ -38,8 +48,8 @@
                                 style="border-radius: 24px 0px!important;">
 
                                 <a class="{{ $service->id == $item->id ? 'bg-main text-white' : ' text-dark' }}"
-                                    href="{{ route('front.service.show', $item->id) }}">
-                                    <img src="{{ asset($item->icon) }}" alt="" style="width: 40px!important">
+                                    href="{{ route('front.service.show', $item->id) }}" style="font-size: 20px;">
+                                    <img src="{{ asset($item->icon) }}" alt="" style="width: 40px!important;">
                                     {{ $item->title }}
                                 </a>
                             </li>
@@ -52,11 +62,11 @@
             </div>
             @if ($service->description)
                 <div class="col-md-12 col-lg-4">
-                    <div class="" style="font-weight: 400 !important;">
+                    <div class="pra" style="font-weight: 400 !important;font-size: 20px;">
 
                         {{ $service->short_description }}
                     </div>
-                    <div class="desc  p-2 w3-round-large">
+                    <div class="desc  p-2 w3-round-large pra">
                         {!! $service->description !!}
                     </div>
                 </div>

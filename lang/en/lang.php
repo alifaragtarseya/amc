@@ -445,11 +445,10 @@ return [
     'bg_feature' => 'Feature Image In Home Page',
     'our_projects' => 'OUR PROJECTS',
     'our_partners' => 'OUR PARTNERS',
-    'our_ambition'  => 'OUR AMBITION',
-    'goals'         => 'OUR GOALS',
+    'our_ambition'  => 'Our Ambition',
+    'goals'         => 'Our Goals',
     'Why_chooseus' => 'WHY CHOOSE US',
     'view_services' => 'View services',
     'title_contact_us'  => 'are you ready to makeover your home ?',
     'contact_us_desc'    => 'Request free consultation and lets do it !',
-    'our_projects'      => 'Our Projects',
  ];

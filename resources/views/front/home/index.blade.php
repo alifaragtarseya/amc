@@ -1,5 +1,12 @@
 @extends('front.layouts.master')
+@section('css')
+    <style>
+        .slider--description * {
+            color: white!important;
+        }
+    </style>
 
+@endsection
 @section('content')
 
     <!-- Carousel Start -->

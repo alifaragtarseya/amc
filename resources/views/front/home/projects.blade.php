@@ -21,7 +21,7 @@
                             @endphp
                         <b class="text-center fs-3 " >
                             @foreach ($words as $word)
-                                <span class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
+                                <span style="font-weight: bold;" class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
                             @endforeach
                         </b><br><br>
 
@@ -88,7 +88,7 @@
         @endif
         
         <div class="text-center pt-4">
-            <a href="{{ route('front.product') }}" class="btn btn--custom border-white">
+            <a href="{{ route('front.product') }}" class="btn btn--custom border-white" style="font-weight: 400;font-size: 20px;">
 
                 {{ __('lang.view_all_projects') }}
                 <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

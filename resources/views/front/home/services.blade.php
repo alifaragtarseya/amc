@@ -18,7 +18,7 @@
                         @endphp
                     <b class="text-center fs-3 " >
                         @foreach ($words as $word)
-                            <span class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
+                            <span style="font-weight: bold;" class="{{ $loop->last ? 'main-color' : '' }}">{{ $word }}</span>
                         @endforeach
                     </b><br><br>
 
@@ -42,12 +42,12 @@
                                     <div class="text-center" style="gap: 15px">
 
                                         <b  class="fs-4 text-white">{{ $item->title }}</b>
-                                        <p class="pt-4 text-card text-white" style="height: 120px">
+                                        <p class="pt-4 text-card text-white" style="height: 120px;">
                                             {{ Str::limit($item->short_description, 100) }}
                                         </p>
                                     </div>
                                 </div>
-                                <a href="{{ route('front.service.show',$item->id) }}" class="btn btn--custom-2 border-white  w3-block">
+                                <a href="{{ route('front.service.show',$item->id) }}" class="btn btn--custom-2 border-white  w3-block" style="font-size: 18px;font-weight: 600;">
 
                                     {{ __('lang.service_details') }}
                                 </a>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="text-center pt-4">
-            <a href="{{ route('front.service') }}" class="btn btn--custom border-white">
+            <a href="{{ route('front.service') }}" class="btn btn--custom border-white" style="font-weight: 400;font-size: 20px;">
 
                 {{ __('lang.view_all_services') }}
                 <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
