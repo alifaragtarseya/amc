@@ -1,7 +1,7 @@
 <!-- Navbar Start -->
 <div class="{{ !request()->routeIs('front.home') || isMobile() || isTablet() ? 'bg-liner' : '' }}">
     <div class="container p-3">
-        <nav class="navbar round-100-0 navbar-expand-lg  w3-white sticky-top " style="padding: 10px  15px"
+        <nav class="navbar round-100-0 navbar-expand-lg  w3-white sticky-top " style="padding: 5px  15px"
             dir="{{ isRtl() ? 'rtl' : 'ltr' }}">
             <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center">
                 @if (getSettingValue('logo'))
