@@ -76,6 +76,7 @@ return [
         'description' => 'The description in Arabic',
         'question' => 'Question in Arabic',
         'jop' => 'Job in Arabic',
+        'Comapny_name' => 'Comapny Name in Arabic',
     ],
 
     'en' => [
@@ -83,6 +84,7 @@ return [
         'description' => 'The description in English',
         'question' => 'Question in English',
         'jop' => 'Job in English',
+        'company_name' => 'Comapny Name in English',
 
     ],
 
@@ -451,4 +453,7 @@ return [
     'view_services' => 'View services',
     'title_contact_us'  => 'are you ready to makeover your home ?',
     'contact_us_desc'    => 'Request free consultation and lets do it !',
- ];
+    'company_name_ar'      => 'Company Name in Arabic',
+    'company_name_en'      => 'Company Name in English',
+    'link_company'        => 'Company Link',
+];

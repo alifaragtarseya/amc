@@ -118,7 +118,7 @@
 
                         </div>
                     </div>
-                @else 
+                @else
                     <div class="col-lg-3  col-md-5 offset-lg-1 {{ !isTablet() && !isMobile() ? 'border-end' : ''  }} ">
                         <h1 class="text-white mb-4">
                             <img style="width: 140px" class=" me-3" src="{{ asset(getSettingValue('logo_white')) }}"
@@ -201,20 +201,20 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}" href="{{ url('/') }}">{{ __('lang.home') }}</a></li>
                             <li class="nav-item mb-2">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}" href="{{ route('front.about') }}">{{ __('lang.about_us') }}</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
                                     href="{{ route('front.service') }}">{{ __('lang.services') }}</a>
                             </li>
@@ -222,7 +222,7 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
                                     href="{{ route('front.product') }}">{{ __('lang.our_work') }}</a>
                             </li>
@@ -230,12 +230,12 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
                                     href="{{ route('front.contact') }}">{{ __('lang.contact') }}</a>
                             </li>
-                            
-                        </ul>                    
+
+                        </ul>
                     </div>
                 @else
                     <div class="col-lg-2  col-md-5 offset-md-1 {{ !isTablet() && !isMobile() ? 'border-end' : '' }}  ">
@@ -245,20 +245,20 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}" href="{{ url('/') }}">{{ __('lang.home') }}</a></li>
                             <li class="nav-item mb-2">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}" href="{{ route('front.about') }}">{{ __('lang.about_us') }}</a>
                             </li>
                             <li class="nav-item mb-2">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
                                     href="{{ route('front.service') }}">{{ __('lang.services') }}</a>
                             </li>
@@ -266,7 +266,7 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
                                     href="{{ route('front.product') }}">{{ __('lang.our_work') }}</a>
                             </li>
@@ -274,12 +274,12 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="12" height="12" fill="#B58050"/>
                                     </svg>
-                                    
+
                                 <a class="text-light mb-3 {{  app()->getLocale() == 'ar' ? 'me-2' : 'ms-2' }}"
                                     href="{{ route('front.contact') }}">{{ __('lang.contact') }}</a>
                             </li>
-                            
-                        </ul>                    
+
+                        </ul>
                     </div>
                 @endif
                 <div class="col-lg-3 col-md-6 offset-lg-1 ">
@@ -344,8 +344,8 @@
                     <b>
                         {{ __('lang.copyrights') }}© {{ date('Y') }}
                         {{ __('lang.all_right_save') }}
-                        <a href="#" style="color: #BDA771" target="_blank">
-                            {{ __('lang.tarseya') }}
+                        <a href="{{ getSettingValue('company_website' ) }}" style="color: #BDA771" target="_blank">
+                            {{ getSettingValue('company_name_'. app()->getLocale() )   }}
                         </a>
                     </b>
                 </div>
