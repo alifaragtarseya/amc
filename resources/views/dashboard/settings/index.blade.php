@@ -80,7 +80,32 @@
                                             </div>
                                         </div>
                                     @endforeach
-
+                                    @foreach (config('translatable.locales') as $key => $locale)
+                                        <div class="col-md-6 pt-3">
+                                            <div class="form-group">
+                                                <label for="name">
+                                                    {{ __('lang.company_name_' . $locale) }}
+                                                </label>
+                                                {!! Form::text(
+                                                    'company_name_' . $locale,
+                                                    old("company_name_{$locale}", optional($settings->where('key', 'company_name_' . $locale)->first())->value),
+                                                    ['class' => 'form-control'],
+                                                ) !!}
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                    <div class="col-md-12 pt-3">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                {{ __('lang.link_company') }}
+                                            </label>
+                                            {!! Form::text(
+                                                'company_website',
+                                                old("company_website", optional($settings->where('key', 'company_website')->first())->value),
+                                                ['class' => 'form-control'],
+                                            ) !!}
+                                        </div>
+                                    </div>
                                     @foreach (config('translatable.locales') as $key => $locale)
                                         <div class="col-md-6 pt-3">
                                             <div class="form-group">
