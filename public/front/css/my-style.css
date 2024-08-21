@@ -15,6 +15,9 @@ html,body{
     /* font-family: 'Myriad Pro', sans-serif; */
 }
 
+p, a { 
+    font-weight: 600!important;
+}
 
 .nav-active,.navbar-nav a.nav-item.nav-link:hover{
     color: var(--primary) !important;
