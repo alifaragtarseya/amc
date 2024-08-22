@@ -35,7 +35,7 @@
                         <div class="card service-card border-0 round-100-0 overflow-hidden " style="background-image: url({{ asset($item->image) }});background-position: center;background-size: cover;background-repeat: no-repeat;height: 100%">
 
                             <div class="card-body round-100-0 text-center" style="background: #10312bc7;">
-                                <img src="{{ asset($item->icon) }}" style="width: 72px; height: 72px" class=" m-auto" alt="">
+                                <img src="{{ asset($item->icon) }}" style="width: 72px; height: 72px" class=" m-auto mb-3" alt="">
 
 
                                 <div class="p-2" style="">

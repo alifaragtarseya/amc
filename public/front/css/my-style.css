@@ -15,7 +15,7 @@ html,body{
     /* font-family: 'Myriad Pro', sans-serif; */
 }
 
-/* p, a { 
+/* p, a {
     font-weight: 600!important;
 } */
 
@@ -90,8 +90,9 @@ div.soical-media a{
 }
 
 .slider--title *    {
-    font-size: 42px;
+    font-size: 48px;
     line-height: 50px !important;
+    font-weight: bold!important;
     font-weight: 700 !important;
     /* color: var(--primary) !important; */
 
@@ -343,7 +344,7 @@ div.soical-media a{
 
 @media screen and (max-width: 360px) {
 
-   
+
     .carousel--contant{
         margin: 0px -40px !important;
     width: 100% !important;
@@ -351,7 +352,7 @@ div.soical-media a{
 
     }
 
-    
+
     .text-slider-mobile {
         line-height: 17px !important;
         font-size: 10px;
@@ -364,7 +365,7 @@ div.soical-media a{
         padding: 9px 20px;
         font-size: 12px;
     }
-   
+
     .youtube_link iframe{
         height: 170px !important;
     }
@@ -387,7 +388,7 @@ div.soical-media a{
     }
 }
 @media (min-width: 1920px) and (min-height: 478px)  {
-    
+
 
     .text-title-description-baner {
         margin-top: 120px;
@@ -417,7 +418,7 @@ div.soical-media a{
         padding: 5px !important;
 
     }
-    
+
     .text-slider-mobile *{
         font-size: 10px!important;
         line-height: 17px!important;
@@ -455,7 +456,7 @@ div.soical-media a{
         margin: 0px -46px !important;
         width: 100% !important;
     }
-    
+
     .youtube_link iframe{
         height: 200px !important;
     }
@@ -513,7 +514,7 @@ div.soical-media a{
         margin: 0px -50px !important;
         width: 100% !important;
     }
-    
+
 }
 @media screen and (min-width: 412px) and (max-width: 425px) {
     .lap--view{
@@ -553,7 +554,7 @@ div.soical-media a{
         padding: 5px !important;
 
     }
-    
+
     .youtube_link iframe{
         height: 200px !important;
     }
@@ -600,7 +601,7 @@ div.soical-media a{
     width: 100% !important;
     padding: 5px !important;
     }
-   
+
     .youtube_link iframe{
         height: 200px !important;
     }
@@ -1042,7 +1043,7 @@ div.soical-media a{
     font-size: 24px;
     color: #333;
     z-index: 1;
-} 
+}
 
 .owl-dots {
     display: flex!important;

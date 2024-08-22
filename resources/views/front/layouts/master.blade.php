@@ -56,7 +56,7 @@
             .h6,
             * {
                 /* font-family: 'Source Sans 3', sans-serif; */
-                
+
                 font-family: "GE SS Two Medium" !important;
                 font-weight: 500;
             }
@@ -84,9 +84,8 @@
             .h5,
             .h6,
             * {
-                /* font-family: 'Source Sans 3', sans-serif; */
-                font-family: 'Myriad Pro', sans-serif!important;                
-                font-weight: 500;
+                font-family: 'Myriad Pro', sans-serif!important;
+                font-weight: 600!important;
             }
         </style>
     @endif

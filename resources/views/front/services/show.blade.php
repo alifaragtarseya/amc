@@ -2,7 +2,7 @@
 @section('css')
 <style>
     .pra p {
-            /* margin: auto; */
+            /* margin: auto;  filter: invert(44%) sepia(25%) saturate(744%); */
             width: 90%;
             color: black;
             font-size: 20px;
@@ -17,7 +17,7 @@
     <div class="container-fluid page-header p-0 pt-5" style="background-image: url({{ asset($metaBanner->image) }});"
         data-wow-delay="0.1s">
         <div class="overlay-banner"></div>
-        
+
         <div class="border pt-5 title--banner" >
             <b class="text-center p-2 w3-round-xxlarge  text-white  mb-4 " style="font-size: x-large;">{{ isRtl() ? $metaBanner->title : $metaBanner->title_en }}</b>
             <br>
@@ -30,7 +30,7 @@
                 </linearGradient>
                 </defs>
             </svg>
-                
+
         </div>
     </div>
     <br><br><br><br>
@@ -39,17 +39,17 @@
 
 
         <div class="row">
-            <div class="col-md-12 col-lg-4 p-5 container">
+            <div class="col-md-12 col-lg-4 p-3 container">
 
                 <div class="">
                     <ul class="w3-ul">
                         @foreach ($services as $item)
                             <li class="{{ $service->id == $item->id ? 'bg-main text-white' : ' text-dark' }} border mb-4"
-                                style="border-radius: 24px 0px!important;">
+                                style="border-radius: 24px 0px!important; border: 1px solid #B58050!important;">
 
-                                <a class="{{ $service->id == $item->id ? 'bg-main text-white' : ' text-dark' }}"
-                                    href="{{ route('front.service.show', $item->id) }}" style="font-size: 20px;">
-                                    <img src="{{ asset($item->icon) }}" alt="" style="width: 40px!important;">
+                                <a class="{{ $service->id == $item->id ? 'bg-main text-white' : ' ' }}"
+                                    href="{{ route('front.service.show', $item->id) }}" style="font-size: 16px; font-weight: 900!important;color: #B58050;">
+                                    <img src="{{ asset($item->icon) }}" alt="" style="width: 40px!important;{{ $service->id == $item->id ? '' : 'filter: invert(70%) sepia(70%) saturate(744%);' }} ">
                                     {{ $item->title }}
                                 </a>
                             </li>
@@ -62,7 +62,7 @@
             </div>
             @if ($service->description)
                 <div class="col-md-12 col-lg-4">
-                    <div class="pra" style="font-weight: 400 !important;font-size: 20px;">
+                    <div class="pra" style="font-size: 20px;font-weight: 600 !important;">
 
                         {{ $service->short_description }}
                     </div>
@@ -72,12 +72,12 @@
                 </div>
             @endif
             <div class="col-md-12 col-lg-4  p-2 w3-round-large">
-                
+
                 <img class="" style="height: 450px;width: 100%;border-radius: 24px 0px!important;"
                     src="{{ asset($service->image) }}" alt="">
 
             </div>
-            
+
 
 
         </div>

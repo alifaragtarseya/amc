@@ -40,7 +40,7 @@
     }
     .decription--about * {
         line-height: 36px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
         color: #212121;
     }

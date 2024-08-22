@@ -16,7 +16,7 @@
     <div class="container-fluid page-header p-0 pt-5" style="background-image: url({{ asset($metaBanner->image) }});"
         data-wow-delay="0.1s">
         <div class="overlay-banner"></div>
-        
+
         <div class="border pt-5 title--banner" >
             <b class="text-center p-2 w3-round-xxlarge  text-white  mb-4 " style="    font-size: x-large;">{{ isRtl() ? $metaBanner->title : $metaBanner->title_en }}</b>
             <br>
@@ -29,7 +29,7 @@
                 </linearGradient>
                 </defs>
             </svg>
-                
+
         </div>
     </div>
     <!-- Page Header End -->
@@ -42,7 +42,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <img class=""  src="{{ asset($about->image) }}" alt="" style="object-fit: cover; border-top-left-radius: 500px;
                     border-top-right-radius: 500px;">
-    
+
                 </div>
                 <div class="col-lg-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="p-4">
@@ -51,7 +51,7 @@
                             <h3 class="fs-2"><b>{{ $about->title }}</b></h3>
                         </div>
                         <br>
-                        <p class=" text-dark" style="line-height: 36px;font-size: 24px;font-weight: 400;">
+                        <p class=" text-dark" style="line-height: 36px;font-size: 20px;font-weight: 400;">
                             {{ $about->short_description }}
                         </p>
                         <div class="decription--about" >
@@ -73,11 +73,11 @@
 
     <div class="pt-5 mb-5 container">
         <div class="row">
-            <div class="col-md-6 mb-4 pb-4">
-                <div class=" card  mission-item p-5 "
-                    style="border: 1px solid #B58050!important; border-radius: 12px!important;">
+            <div class="col-md-6 mb-4 ">
+                <div class=" card  mission-item p-4 "
+                    style="border: 1px solid #B58050!important; border-radius: 12px!important; height: 100%;">
                     <div class="row ">
-                        <div class="col-lg-2 col-4 mb-3">
+                        <div class="col-lg-2 col-4 mb-3 ">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
@@ -118,9 +118,8 @@
                                 </defs>
                             </svg>
 
-
                         </div>
-                        <div class=" col-lg-9 col-12">
+                        <div class=" col-lg-10 col-12">
                             <h3 class="" style="font-weight: bold;">{{ __('lang.our_vision') }}</h3>
                             <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('our_vision_' . app()->getLocale()) }}
@@ -131,10 +130,45 @@
 
 
             </div>
+            <div class="col-md-6 mb-4  ">
+                <div class=" card  mission-item p-4 "
+                    style="border: 1px solid #B58050!important; border-radius: 12px!important; height: 100%;">
+                    <div class="row ">
+                        <div class="col-lg-2 col-4 mb-3">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
+                                    stroke="#B58050" />
+                                <g clip-path="url(#clip0_66_915)">
+                                    <path
+                                        d="M51.5417 29.3409L44.7295 21.6325C44.6562 21.5495 44.5661 21.4831 44.4652 21.4376C44.3642 21.3921 44.2548 21.3686 44.1441 21.3686H19.8559C19.7452 21.3686 19.6357 21.3921 19.5348 21.4376C19.4339 21.4831 19.3438 21.5495 19.2705 21.6325L12.4582 29.3409C12.3898 29.4183 12.3374 29.5085 12.3041 29.6063C12.2709 29.704 12.2573 29.8075 12.2642 29.9105C12.2711 30.0136 12.2984 30.1142 12.3445 30.2067C12.3906 30.2991 12.4546 30.3815 12.5327 30.4491C12.5343 30.4509 12.5356 30.4529 12.5372 30.4548L31.4155 51.7372C31.4888 51.8198 31.5788 51.886 31.6795 51.9313C31.7803 51.9766 31.8895 52.0001 32 52.0001C32.1104 52.0001 32.2196 51.9766 32.3204 51.9313C32.4211 51.886 32.5111 51.8198 32.5844 51.7372L51.4627 30.4548C51.4643 30.453 51.4657 30.4509 51.4672 30.4491C51.5453 30.3815 51.6093 30.2991 51.6554 30.2067C51.7015 30.1142 51.7288 30.0136 51.7357 29.9105C51.7426 29.8075 51.729 29.704 51.6958 29.6063C51.6625 29.5085 51.6101 29.4183 51.5417 29.3409ZM42.7588 22.931L39.2868 28.5282L33.7228 22.931H42.7588ZM37.6292 29.077H26.3707L32 23.4142L37.6292 29.077ZM30.2771 22.9311L24.7131 28.5283L21.2411 22.9311H30.2771ZM19.7346 23.4667L23.2147 29.077H14.7766L19.7346 23.4667ZM14.7897 30.6395H24.0224L30.4002 48.238L14.7897 30.6395ZM33.6287 48.2053L38.0848 36.145C38.2343 35.7402 38.0275 35.2909 37.6228 35.1414C37.2178 34.9917 36.7686 35.1987 36.6192 35.6034L32.0071 48.086L25.6843 30.6395H49.2102L33.6287 48.2053ZM40.7852 29.077L44.2653 23.4667L49.2233 29.077H40.7852ZM32 12C31.5685 12 31.2187 12.3498 31.2187 12.7812V16.8057C31.2187 17.2372 31.5685 17.587 32 17.587C32.4314 17.587 32.7812 17.2372 32.7812 16.8057V12.7812C32.7812 12.3498 32.4314 12 32 12ZM39.1142 15.0878C38.8091 14.7827 38.3146 14.7827 38.0093 15.0878L35.1635 17.9335C34.8584 18.2386 34.8584 18.7333 35.1635 19.0384C35.236 19.111 35.3221 19.1686 35.4169 19.2079C35.5117 19.2472 35.6133 19.2673 35.716 19.2672C35.8186 19.2673 35.9202 19.2472 36.015 19.2079C36.1098 19.1686 36.1959 19.111 36.2684 19.0384L39.1142 16.1927C39.4193 15.8876 39.4193 15.3929 39.1142 15.0878ZM28.6842 17.9335L25.8385 15.0878C25.5335 14.7827 25.0389 14.7827 24.7335 15.0878C24.4285 15.3929 24.4285 15.8876 24.7335 16.1927L27.5793 19.0384C27.7319 19.1909 27.9318 19.2672 28.1317 19.2672C28.3317 19.2672 28.5316 19.1909 28.6842 19.0384C28.9892 18.7333 28.9892 18.2386 28.6842 17.9335Z"
+                                        fill="white" />
+                                    <path
+                                        d="M38.3616 33.7468C38.793 33.7468 39.1428 33.397 39.1428 32.9656C39.1428 32.5341 38.793 32.1843 38.3616 32.1843C37.9301 32.1843 37.5803 32.5341 37.5803 32.9656C37.5803 33.397 37.9301 33.7468 38.3616 33.7468Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_66_915">
+                                        <rect width="40" height="40" fill="white"
+                                            transform="translate(12 12)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class=" col-lg-10 col-12">
+                            <h3 class="" style="font-weight: bold;">{{ __('lang.our_value') }}</h3>
+                            <div class="text-dark " style="font-size: 20px">
+                                {{ getSettingValue('rate_us_' . app()->getLocale()) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6 mb-4 ">
 
-                <div class=" card  mission-item p-5 "
-                    style="border: 1px solid #B58050!important; border-radius: 12px!important;">
+                <div class=" card  mission-item p-4 "
+                    style="border: 1px solid #B58050!important; border-radius: 12px!important; height: 100%;">
                     <div class="row ">
                         <div class="col-lg-2 col-4 mb-3">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -164,7 +198,7 @@
 
 
                         </div>
-                        <div class=" col-lg-9 col-12">
+                        <div class=" col-lg-10 col-12">
                             <h3 class="" style="font-weight: bold;">{{ __('lang.goals') }}</h3>
                             <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('goals_' . app()->getLocale()) }}
@@ -173,44 +207,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4  ">
-                <div class=" card  mission-item p-5 "
-                    style="border: 1px solid #B58050!important; border-radius: 12px!important;">
-                    <div class="row ">
-                        <div class="col-lg-2 col-4 mb-3">
-                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="63" height="63" rx="7.5" fill="#B58050"
-                                    stroke="#B58050" />
-                                <g clip-path="url(#clip0_66_915)">
-                                    <path
-                                        d="M51.5417 29.3409L44.7295 21.6325C44.6562 21.5495 44.5661 21.4831 44.4652 21.4376C44.3642 21.3921 44.2548 21.3686 44.1441 21.3686H19.8559C19.7452 21.3686 19.6357 21.3921 19.5348 21.4376C19.4339 21.4831 19.3438 21.5495 19.2705 21.6325L12.4582 29.3409C12.3898 29.4183 12.3374 29.5085 12.3041 29.6063C12.2709 29.704 12.2573 29.8075 12.2642 29.9105C12.2711 30.0136 12.2984 30.1142 12.3445 30.2067C12.3906 30.2991 12.4546 30.3815 12.5327 30.4491C12.5343 30.4509 12.5356 30.4529 12.5372 30.4548L31.4155 51.7372C31.4888 51.8198 31.5788 51.886 31.6795 51.9313C31.7803 51.9766 31.8895 52.0001 32 52.0001C32.1104 52.0001 32.2196 51.9766 32.3204 51.9313C32.4211 51.886 32.5111 51.8198 32.5844 51.7372L51.4627 30.4548C51.4643 30.453 51.4657 30.4509 51.4672 30.4491C51.5453 30.3815 51.6093 30.2991 51.6554 30.2067C51.7015 30.1142 51.7288 30.0136 51.7357 29.9105C51.7426 29.8075 51.729 29.704 51.6958 29.6063C51.6625 29.5085 51.6101 29.4183 51.5417 29.3409ZM42.7588 22.931L39.2868 28.5282L33.7228 22.931H42.7588ZM37.6292 29.077H26.3707L32 23.4142L37.6292 29.077ZM30.2771 22.9311L24.7131 28.5283L21.2411 22.9311H30.2771ZM19.7346 23.4667L23.2147 29.077H14.7766L19.7346 23.4667ZM14.7897 30.6395H24.0224L30.4002 48.238L14.7897 30.6395ZM33.6287 48.2053L38.0848 36.145C38.2343 35.7402 38.0275 35.2909 37.6228 35.1414C37.2178 34.9917 36.7686 35.1987 36.6192 35.6034L32.0071 48.086L25.6843 30.6395H49.2102L33.6287 48.2053ZM40.7852 29.077L44.2653 23.4667L49.2233 29.077H40.7852ZM32 12C31.5685 12 31.2187 12.3498 31.2187 12.7812V16.8057C31.2187 17.2372 31.5685 17.587 32 17.587C32.4314 17.587 32.7812 17.2372 32.7812 16.8057V12.7812C32.7812 12.3498 32.4314 12 32 12ZM39.1142 15.0878C38.8091 14.7827 38.3146 14.7827 38.0093 15.0878L35.1635 17.9335C34.8584 18.2386 34.8584 18.7333 35.1635 19.0384C35.236 19.111 35.3221 19.1686 35.4169 19.2079C35.5117 19.2472 35.6133 19.2673 35.716 19.2672C35.8186 19.2673 35.9202 19.2472 36.015 19.2079C36.1098 19.1686 36.1959 19.111 36.2684 19.0384L39.1142 16.1927C39.4193 15.8876 39.4193 15.3929 39.1142 15.0878ZM28.6842 17.9335L25.8385 15.0878C25.5335 14.7827 25.0389 14.7827 24.7335 15.0878C24.4285 15.3929 24.4285 15.8876 24.7335 16.1927L27.5793 19.0384C27.7319 19.1909 27.9318 19.2672 28.1317 19.2672C28.3317 19.2672 28.5316 19.1909 28.6842 19.0384C28.9892 18.7333 28.9892 18.2386 28.6842 17.9335Z"
-                                        fill="white" />
-                                    <path
-                                        d="M38.3616 33.7468C38.793 33.7468 39.1428 33.397 39.1428 32.9656C39.1428 32.5341 38.793 32.1843 38.3616 32.1843C37.9301 32.1843 37.5803 32.5341 37.5803 32.9656C37.5803 33.397 37.9301 33.7468 38.3616 33.7468Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_66_915">
-                                        <rect width="40" height="40" fill="white"
-                                            transform="translate(12 12)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
 
-                        </div>
-                        <div class=" col-lg-9 col-12">
-                            <h3 class="" style="font-weight: bold;">{{ __('lang.our_value') }}</h3>
-                            <div class="text-dark " style="font-size: 20px">
-                                {{ getSettingValue('rate_us_' . app()->getLocale()) }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-6 mb-4 ">
-                <div class=" card  mission-item p-5 "
-                    style="border: 1px solid #B58050!important; border-radius: 12px!important;">
+                <div class=" card  mission-item p-4 "
+                    style="border: 1px solid #B58050!important; border-radius: 12px!important; height: 100%;">
                     <div class="row ">
                         <div class="col-lg-2 col-4 mb-3">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -240,7 +240,7 @@
 
 
                         </div>
-                        <div class=" col-lg-9 col-12">
+                        <div class=" col-lg-10 col-12">
                             <h3 class="" style="font-weight: bold;">{{ __('lang.our_ambition') }}</h3>
                             <div class="text-dark " style="font-size: 20px">
                                 {{ getSettingValue('our_message_' . app()->getLocale()) }}
@@ -252,7 +252,7 @@
         </div>
 
 
-        
+
     </div>
     <div class="row mt-5">
         <div class="col-md-4" style="padding: 0px!important;">
