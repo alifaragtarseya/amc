@@ -104,7 +104,7 @@
           <div data-i18n="home">{{ __('lang.about') }}</div>
         </a>
         <ul class="menu-sub">
-          
+
           <li class="menu-item {{ request()->routeIs('admin.about')?'active':'' }}">
             <a href="{{ route('admin.about') }}"  class="menu-link ">
               <div data-i18n="CRM">{{ __('lang.about_us') }}</div>
@@ -154,7 +154,7 @@
         </ul>
       </li>
       {{-- blogs --}}
-      <li class="menu-item {{ request()->routeIs('admin.blog*')  || request()->is('admin-panel/metatags/blogs')?'active open':'' }}">
+      {{-- <li class="menu-item {{ request()->routeIs('admin.blog*')  || request()->is('admin-panel/metatags/blogs')?'active open':'' }}">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-box"></i>
           <div data-i18n="home">{{ __('lang.blogs') }}</div>
@@ -172,7 +172,7 @@
             </a>
           </li>
         </ul>
-      </li>
+      </li> --}}
 
       {{-- projects --}}
       {{-- <li class="menu-item {{ request()->routeIs('admin.project*') || request()->is('admin-panel/metatags/project')?'active open':'' }}">
@@ -258,12 +258,12 @@
         </a>
       </li>
       {{-- tools --}}
-      <li class="menu-item {{ request()->routeIs('admin.tool*')?'active':'' }}">
+      {{-- <li class="menu-item {{ request()->routeIs('admin.tool*')?'active':'' }}">
         <a href="{{ route('admin.tool') }}"  class="menu-link  ">
             <i class="menu-icon tf-icons bx bx-layer-plus"></i>
           <div data-i18n="tools">{{ __('lang.tools') }}</div>
         </a>
-      </li>
+      </li> --}}
 
 
       {{-- features --}}
