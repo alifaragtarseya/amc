@@ -24,7 +24,7 @@
                         class="nav-item nav-link {{ request()->routeIs('front.home') ? 'nav-active' : '' }}">{{ __('lang.home') }}</a>
                     <a href="{{ route('front.about') }}"
                         class="nav-item nav-link {{ request()->routeIs('front.about') ? 'nav-active' : '' }}">{{ __('lang.about_us') }}</a>
-                    <a href="{{ route('front.service.show', 1) }}"
+                    <a href="{{ route('front.service') }}"
                         class="nav-item nav-link {{ request()->routeIs('front.service*') ? 'nav-active' : '' }}">{{ __('lang.our_services') }}</a>
                     {{-- <a href="{{ route('front.package') }}" class="nav-item nav-link {{ request()->routeIs('front.package*') ? 'nav-active' : '' }}">{{ __('lang.packages') }}</a>
                     <span class="bg-sec" style="    width: 2px;height: 40px;"></span> --}}

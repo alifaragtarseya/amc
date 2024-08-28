@@ -47,7 +47,7 @@
                             <li class="{{ $service->id == $item->id ? 'bg-main text-white' : ' text-dark' }} border mb-4"
                                 style="border-radius: 24px 0px!important; border: 1px solid #B58050!important;">
 
-                                <a class="{{ $service->id == $item->id ? 'bg-main text-white' : ' ' }}"
+                                <a class="{{ $service->id == $item->id ? 'bg-main text-white' : ' ' }} d-flex gap-2 align-items-center "
                                     href="{{ route('front.service.show', $item->id) }}" style="font-size: 16px; font-weight: 900!important;color: #B58050;">
                                     <img src="{{ asset($item->icon) }}" alt="" style="width: 40px!important;{{ $service->id == $item->id ? '' : 'filter: invert(70%) sepia(70%) saturate(744%);' }} ">
                                     {{ $item->title }}
@@ -60,23 +60,18 @@
 
 
             </div>
-            @if ($service->description)
-                <div class="col-md-12 col-lg-4">
+            <div class="col-md-12 col-lg-8">
+                    <img class="mb-4" style="height: 450px;width: 100%; max-width: 600px; border-radius: 24px 0px!important;"
+                        src="{{ asset($service->image) }}" alt="">
                     <div class="pra" style="font-size: 20px;font-weight: 600 !important;">
 
                         {{ $service->short_description }}
                     </div>
-                    <div class="desc  p-2 w3-round-large pra">
+                    <div class="   w3-round-large pra">
                         {!! $service->description !!}
                     </div>
                 </div>
-            @endif
-            <div class="col-md-12 col-lg-4  p-2 w3-round-large">
 
-                <img class="" style="height: 450px;width: 100%;border-radius: 24px 0px!important;"
-                    src="{{ asset($service->image) }}" alt="">
-
-            </div>
 
 
 
