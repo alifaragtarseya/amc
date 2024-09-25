@@ -9,7 +9,7 @@
 @endsection
 @section('content')
 
-    <!-- Carousel Start -->
+    <!-- Carousel Start ?v=2 -->
         @if(isMobile())
             @include('front.home.slider_mobile', ['slider' => $slider])
         @else
