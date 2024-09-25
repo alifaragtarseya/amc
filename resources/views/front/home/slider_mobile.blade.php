@@ -3,12 +3,18 @@
 
             <div class="">
                 <div class="row pt-5 mt-5">
-                    <div class="col-md-6 col-6 p-sm-5 ">
-                        <div class="p-md-5 text-title-description-baner">
+                    <div class="col-md-6 col-12 ">
+                        <img src="{{ asset($slider->image) }}" style="width: 100%; {{isRtl()? 'transform: rotateY(181deg);' : ''}}"  alt="">
+
+                    </div>
+                    <div class="col-md-6 col-12 p-sm-5 " >
+                        <div class="p-md-5 text-title-description-baner" style="
+                        padding-right: 10px;
+                    ">
 
                             {{-- <span class="slider--span">{{ __('lang.hello_to_trust') }}</span> --}}
 
-                            <div class="pt-3 title--n {{!isMobile()?'slider--title':''}} title-slider-bg-screen {{ isMobile() ? 'text-slider-mobile' : '' }}" style="">
+                            <div class="pt-3 title--n {{!isMobile()?'slider--title':''}} title-slider-bg-screen {{ isMobile() ? 'text-slider-mobile title-slider-mobile title-slider-mobile-p' : '' }}">
                                 {!! $slider->title !!}
                             </div>
                             <div class="text-white title-slider-bg-screen {{ app()->getLocale() == 'ar'  ? 'pl-3' : ''  }} {{ isMobile() ? 'text-slider-mobile slider--description-mobile' : '' }}" style="{{ isMobile() ? 'margin-top: 5%;line-height: 21px !important;font-weight: 500 !important;' : 'margin-top: 5%;font-weight: 600;font-size: 24px!important;' }}">
@@ -24,10 +30,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-6 ">
-                        <img src="{{ asset($slider->image) }}" style="width: 100%; {{isRtl()? 'transform: rotateY(181deg);' : ''}}"  alt="">
 
-                    </div>
                 </div>
             </div>
     </div>

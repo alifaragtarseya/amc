@@ -10,7 +10,11 @@
 @section('content')
 
     <!-- Carousel Start -->
-        @include('front.home.slider', ['slider' => $slider])
+        @if(isMobile())
+            @include('front.home.slider_mobile', ['slider' => $slider])
+        @else
+            @include('front.home.slider', ['slider' => $slider])
+        @endif
     <!-- Carousel End -->
 
 

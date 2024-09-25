@@ -1094,3 +1094,8 @@ div.soical-media a{
     font-weight: 500 !important;
     line-height: 21px !important;
 }
+
+.title-slider-mobile-p *{
+    font-size: x-large !important;
+    line-height: 30px !important;
+}
