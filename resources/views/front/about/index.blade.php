@@ -260,7 +260,7 @@
         </div>
         <div class="col-md-8"
             style="background-image: url({{ asset('front/images/aboutbg.png') }}); background-size:cover; {{ isMobile() ? 'background-image: none' : '' }}">
-            <div style="{{ isMobile() ? '' : 'height: 70%; margin-top:16%' }}" >
+            <div style="{{ isMobile() ? 'margin-top: 10%' : 'height: 70%; margin-top:16%' }}" >
                 <div class="pra  {{ app()->getLocale() == 'ar' ? 'pe-5' : '' }}"
                     style="{{ app()->getLocale() == 'en' ? 'padding-left: 10%' : '' }}">
                     {!! $aboutsec->description !!}
