@@ -1069,10 +1069,6 @@ div.soical-media a{
     line-height: 17px !important;
     font-size: medium!important;
 }
-.text-slider-mobile * {
-    line-height: 17px !important;
-    font-size: medium!important;
-}
 
 .rtl-icon {
     transform: rotateY(181deg);
@@ -1090,4 +1086,9 @@ div.soical-media a{
     line-height: 25px !important;
 
     font-size: 20px!important;
+}
+
+.text-slider-mobile * {
+    line-height: 17px !important;
+    font-size: medium!important;
 }

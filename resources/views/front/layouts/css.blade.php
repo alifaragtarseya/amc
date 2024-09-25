@@ -23,7 +23,7 @@
     @else
 
     @endif
-    <link rel="stylesheet" href="{{ asset('front/css/my-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/my-style.css') }}?v=1.1">
 
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Icon Font Stylesheet -->
