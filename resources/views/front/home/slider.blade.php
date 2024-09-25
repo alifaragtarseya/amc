@@ -3,7 +3,7 @@
 
             <div class="">
                 <div class="row pt-5 mt-5">
-                    <div class="col-md-6 col-6 p-md-5 ">
+                    <div class="col-md-6 col-6 p-sm-5 ">
                         <div class="p-md-5 text-title-description-baner">
 
                             {{-- <span class="slider--span">{{ __('lang.hello_to_trust') }}</span> --}}
@@ -11,8 +11,8 @@
                             <div class="pt-3 title--n {{!isMobile()?'slider--title':''}} title-slider-bg-screen {{ isMobile() ? 'text-slider-mobile' : '' }}" style="">
                                 {!! $slider->title !!}
                             </div>
-                            <div class="text-white title-slider-bg-screen  {{ isMobile() ? 'text-slider-mobile' : '' }}" style="margin-top: 5%;font-weight: 100;font-size: 24px;">
-                                {{ $slider->description }}
+                            <div class="text-white title-slider-bg-screen  {{ isMobile() ? 'text-slider-mobile slider--description-mobile' : '' }}" style="margin-top: 5%;font-weight: 600;font-size: 24px!important;">
+                                    {{ $slider->description }}
                             </div>
 
                             <br>

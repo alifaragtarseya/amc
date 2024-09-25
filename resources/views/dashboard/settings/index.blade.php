@@ -84,6 +84,21 @@
                                         <div class="col-md-6 pt-3">
                                             <div class="form-group">
                                                 <label for="name">
+                                                    {{ __('lang.copyright_' . $locale) }}
+                                                </label>
+                                                {!! Form::text(
+                                                    'copyright_' . $locale,
+                                                    old("copyright_{$locale}", optional($settings->where('key', 'copyright_' . $locale)->first())->value) ,
+                                                    ['class' => 'form-control'],
+                                                ) !!}
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                    @foreach (config('translatable.locales') as $key => $locale)
+                                    
+                                        <div class="col-md-6 pt-3">
+                                            <div class="form-group">
+                                                <label for="name">
                                                     {{ __('lang.company_name_' . $locale) }}
                                                 </label>
                                                 {!! Form::text(

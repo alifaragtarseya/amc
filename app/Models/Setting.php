@@ -18,6 +18,11 @@ class Setting extends Model
                 # code...
                 Self::set($key, $value);
             }
+
+            if ($value == null) {
+                # code...
+                Self::deleteKey($key);
+            }
         }
     }
 
@@ -29,6 +34,14 @@ class Setting extends Model
             $setting->save();
         }else{
             Setting::create(['key' => $key,'value' => $value]);
+        }
+    }
+
+    public static function deleteKey($key)
+    {
+        $setting = self::where('key',$key)->first();
+        if ($setting) {
+            $setting->delete();
         }
     }
 

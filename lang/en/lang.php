@@ -456,4 +456,6 @@ return [
     'company_name_ar'      => 'Company Name in Arabic',
     'company_name_en'      => 'Company Name in English',
     'link_company'        => 'Company Link',
+    'copyright_ar'      => 'Arabic Copyrights',
+    'copyright_en'      => 'English Copyrights',
 ];

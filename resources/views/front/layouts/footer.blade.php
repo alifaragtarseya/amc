@@ -338,11 +338,12 @@
 
                 <div class="text-center text-white">
                     <b>
-                        {{ __('lang.copyrights') }}© {{ date('Y') }}
-                        {{ __('lang.all_right_save') }}
-                        <a href="{{ getSettingValue('company_website' ) }}" style="color: #BDA771" target="_blank">
-                            {{ getSettingValue('company_name_'. app()->getLocale() )   }}
-                        </a>
+                        {{ getSettingValue('copyright_' . app()->getLocale()) ?? "" }}
+                        @if ( getSettingValue('company_name_'. app()->getLocale())   != null)
+                            <a href="{{ getSettingValue('company_website' ) }}" style="color: #BDA771" target="_blank">
+                                {{ getSettingValue('company_name_'. app()->getLocale() )   }}
+                            </a>
+                        @endif
                     </b>
                 </div>
             </div>

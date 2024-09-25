@@ -355,7 +355,7 @@ div.soical-media a{
 
     .text-slider-mobile {
         line-height: 17px !important;
-        font-size: 10px;
+        font-size: 15px!important;
     }
     .text-slider-mobile *{
         /* font-size: 10px!important; */
@@ -1067,13 +1067,27 @@ div.soical-media a{
 
 .text-slider-mobile {
     line-height: 17px !important;
-    font-size: 10px;
+    font-size: medium!important;
 }
 .text-slider-mobile * {
     line-height: 17px !important;
-    /* font-size: 10px; */
+    font-size: medium!important;
 }
 
 .rtl-icon {
     transform: rotateY(181deg);
+}
+
+.slider--description-mobile p {
+    font-weight: 500 !important;
+    line-height: 21px !important;
+}
+
+.slider--description * {
+    color: white!important;
+
+    font-weight: 500 !important;
+    line-height: 25px !important;
+
+    font-size: 20px!important;
 }

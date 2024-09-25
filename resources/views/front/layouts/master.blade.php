@@ -14,7 +14,7 @@
     {{-- <title>@yield('title')</title> --}}
 
     <!-- Favicon -->
-    <link href="{{ asset(getSettingValue('favicon')) }}" rel="icon">
+    <link href="{{ asset(getSettingValue('favicon')) }}"  rel="icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
