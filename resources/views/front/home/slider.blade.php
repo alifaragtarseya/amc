@@ -11,7 +11,7 @@
                             <div class="pt-3 title--n {{!isMobile()?'slider--title':''}} title-slider-bg-screen {{ isMobile() ? 'text-slider-mobile' : '' }}" style="">
                                 {!! $slider->title !!}
                             </div>
-                            <div class="text-white title-slider-bg-screen  {{ isMobile() ? 'text-slider-mobile slider--description-mobile' : '' }}" style="margin-top: 5%;font-weight: 600;font-size: 24px!important;">
+                            <div class="text-white title-slider-bg-screen  {{ isMobile() ? 'text-slider-mobile slider--description-mobile' : '' }}" style="{{ isMobile() ? '    line-height: 21px !important;font-weight: 500 !important;' : 'margin-top: 5%;font-weight: 600;font-size: 24px!important;' }}">
                                     {{ $slider->description }}
                             </div>
 

@@ -1074,10 +1074,7 @@ div.soical-media a{
     transform: rotateY(181deg);
 }
 
-.slider--description-mobile p {
-    font-weight: 500 !important;
-    line-height: 21px !important;
-}
+
 
 .slider--description * {
     color: white!important;
@@ -1091,4 +1088,9 @@ div.soical-media a{
 .text-slider-mobile * {
     line-height: 17px !important;
     font-size: medium!important;
+}
+
+.slider--description-mobile p {
+    font-weight: 500 !important;
+    line-height: 21px !important;
 }
