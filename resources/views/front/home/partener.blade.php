@@ -41,11 +41,10 @@
 
             <div class="col-md-12">
                 <div class="row">
-                    <div class="owl-carousel" id="parteners--owl" style="direction: ltr">
-
+                    <div class="owl-carousel" id="parteners--owl" >
                         @foreach ($parteners as $item)
                             <div class="item m-2">
-                                <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" style="max-height: 150px">
+                                <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" style="height: 200px!important; width: auto!important">
                             </div>
                         @endforeach
                     </div>
