@@ -25,7 +25,7 @@ class StorePackage extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
+            'image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp',Rule::requiredIf(function(){ return !isset($this->id);})],
             'category_id'=>['required',Rule::exists('package_categories','id')],
             'ar.title' => ['required'],
             'ar.description' => ['nullable'],

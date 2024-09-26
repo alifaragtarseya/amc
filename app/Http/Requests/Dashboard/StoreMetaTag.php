@@ -29,7 +29,7 @@ class StoreMetaTag extends FormRequest
             'keywords' => 'required',
             'title_en' => 'required',
             'description_en' => 'required',
-            'image' => 'nullable|image|mimes:png,jpg,jpeg',
+            'image' => 'nullable|image|mimes:png,jpg,jpeg,svg,webp',
         ];
     }
 }

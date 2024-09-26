@@ -25,7 +25,7 @@ class StoreProduct extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
+            'image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp',Rule::requiredIf(function(){ return !isset($this->id);})],
             // 'project_logo' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
             'ar.title' => ['required'],
             'url' => ['required'],

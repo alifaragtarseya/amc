@@ -31,8 +31,8 @@ class StoreSlider extends FormRequest
             'en.title' => ['required','string'],
             'en.description' => ['nullable'],
             // 'type' => ['required','in:image,video'],
-            'image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
-            'bg_image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})]
+            'image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp',Rule::requiredIf(function(){ return !isset($this->id);})],
+            'bg_image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp',Rule::requiredIf(function(){ return !isset($this->id);})]
         ];
 
 
