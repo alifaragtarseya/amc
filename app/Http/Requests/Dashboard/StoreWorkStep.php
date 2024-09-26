@@ -25,15 +25,15 @@ class StoreWorkStep extends FormRequest
     public function rules()
     {
         return [
-            // 'image' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
+            // 'image' => ['nullable','image','mimes:svg,webp,png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
             'image' => ['nullable'],
             'icon' => ['nullable'],
-            // 'icon' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
+            // 'icon' => ['nullable','image','mimes:svg,webp,png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
             'ar.title' => ['required','string'],
             'en.title' => ['required','string'],
             'ar.description' => ['required'],
             'en.description' => ['required'],
-            
+
         ];
     }
 }

@@ -25,8 +25,8 @@ class StoreCounter extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp',Rule::requiredIf(function(){ return !isset($this->id);})],
-            // 'bg_hover' => ['nullable','image','mimes:png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
+            'image' => ['nullable','image','mimes:svg,webp,png,jpg,jpeg,svg,webp',Rule::requiredIf(function(){ return !isset($this->id);})],
+            // 'bg_hover' => ['nullable','image','mimes:svg,webp,png,jpg,jpeg',Rule::requiredIf(function(){ return !isset($this->id);})],
             'ar.title' => ['required','string'],
             'en.title' => ['required','string'],
             'number' => ['required'],

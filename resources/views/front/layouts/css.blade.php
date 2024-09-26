@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="{{ asset('front/css/animated.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('front/css/owl.css') }}"> --}}
-    <link href="{{ asset('front/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('front/lib/owlcarousel/assets/owl.carousel.min.css') }}?v=1.4" rel="stylesheet">
 
     @if (isRtl())
 
@@ -23,7 +23,7 @@
     @else
 
     @endif
-    <link rel="stylesheet" href="{{ asset('front/css/my-style.css') }}?v=1.3">
+    <link rel="stylesheet" href="{{ asset('front/css/my-style.css') }}?v=1.4">
 
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Icon Font Stylesheet -->

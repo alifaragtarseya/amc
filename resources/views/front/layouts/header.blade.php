@@ -54,10 +54,10 @@
                             </a>
                             <div class="dropdown-menu p-0" style="min-width: 225px">
                                 <a class="dropdown-item w3-border-bottom p-3" href="{{ route('front.lang') }}?lang=en">
-                                    <i>English</i>
+                                    <i style="font-style: normal!important;">English</i>
                                 </a>
                                 <a class="dropdown-item p-3" href="{{ route('front.lang') }}?lang=ar">
-                                    <i>العربية</i>
+                                    <i style="font-style: normal!important;">العربية</i>
                                 </a>
                             </div>
                         </div>
@@ -86,10 +86,10 @@
                     </a>
                     <div class="dropdown-menu p-0" style="min-width: 225px">
                         <a class="dropdown-item w3-border-bottom p-3" href="{{ route('front.lang') }}?lang=en">
-                            <i>English</i>
+                            <i style="font-style: normal!important;">English</i>
                         </a>
                         <a class="dropdown-item p-3" href="{{ route('front.lang') }}?lang=ar">
-                            <i>العربية</i>
+                            <i style="font-style: normal!important;">العربية</i>
                         </a>
                     </div>
                 </div>

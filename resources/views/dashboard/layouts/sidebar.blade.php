@@ -1,11 +1,11 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-    <div class="app-brand demo">
+    <div class="app-brand demo" style="height: auto!important">
       <a href="index.html" class="app-brand-link">
         <span class="app-brand-logo demo">
 
         </span>
         <span class="app-brand-text demo menu-text fw-bold ms-2">
-            <img src="{{ asset(getSettingValue('logo')) }}" alt="">
+            <img src="{{ asset(getSettingValue('logo')) }}" style="height: 80px!important;width: auto!important" alt="">
         </span>
       </a>
 

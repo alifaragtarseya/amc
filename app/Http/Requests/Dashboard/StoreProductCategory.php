@@ -25,7 +25,7 @@ class StoreProductCategory extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp'],
+            'image' => ['nullable','image','mimes:svg,webp,png,jpg,jpeg,svg,webp'],
             'ar.title' => ['required','string'],
             'ar.description' => ['nullable'],
             'en.title' => ['required','string'],

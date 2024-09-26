@@ -25,7 +25,7 @@ class StoreFeature extends FormRequest
     public function rules()
     {
         return [
-            'image' => ['nullable','image','mimes:png,jpg,jpeg,svg,webp','dimensions:width=40,height=40',Rule::requiredIf(function(){ return !isset($this->id);})],
+            'image' => ['nullable','image','mimes:svg,webp,png,jpg,jpeg,svg,webp','dimensions:width=40,height=40',Rule::requiredIf(function(){ return !isset($this->id);})],
             'ar.title' => ['required','string'],
             'ar.description' => ['required'],
             'en.title' => ['required','string'],

@@ -48,7 +48,7 @@ class PartenerController extends Controller
 
        // Validate the image
        $inputs = $request->validate([
-           'image' => 'required|image|mimes:jpeg,png,jpg',
+           'image' => 'required|image|mimes:svg,webp,jpeg,png,jpg,svg,webp',
        ]);
        $id = $this->model->max('id')+1;
        // Handle the image upload
@@ -87,7 +87,7 @@ class PartenerController extends Controller
     public function update(Request $request, $id)
     {
         $inputs = $request->validate([
-            'image' => 'nullable|image|mimes:jpeg,png,jpg',
+            'image' => 'nullable|image|mimes:svg,webp,jpeg,png,jpg',
         ]);
         $resource = $this->model->findOrFail($id);
         if(isset($inputs['image'])){

@@ -33,7 +33,7 @@ class HomeController extends Controller
             'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:admins,email,'.auth('admin')->user()->id],
             'password' => ['nullable', 'string', 'min:6'],
-            'image' => ['nullable', 'image', 'mimes:png,jpg,jpeg'],
+            'image' => ['nullable', 'image', 'mimes:svg,webp,png,jpg,jpeg'],
             'phone' => ['required', 'string', 'max:255'],
 
         ]);

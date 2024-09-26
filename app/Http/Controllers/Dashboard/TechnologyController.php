@@ -48,7 +48,7 @@ class TechnologyController extends Controller
 
        // Validate the image
        $inputs = $request->validate([
-           'image' => 'required|image|mimes:jpeg,png,jpg|dimensions:width=140,height=140',
+           'image' => 'required|image|mimes:svg,webp,jpeg,png,jpg|dimensions:width=140,height=140',
        ]);
        $id = $this->model->max('id')+1;
        // Handle the image upload
@@ -87,7 +87,7 @@ class TechnologyController extends Controller
     public function update(Request $request, $id)
     {
         $inputs = $request->validate([
-            'image' => 'nullable|image|mimes:jpeg,png,jpg',
+            'image' => 'nullable|image|mimes:svg,webp,jpeg,png,jpg',
         ]);
         $resource = $this->model->findOrFail($id);
         if(isset($inputs['image'])){
@@ -114,5 +114,5 @@ class TechnologyController extends Controller
     }
 
 
-  
+
 }
