@@ -43,8 +43,8 @@
                 <div class="row">
                     <div class="owl-carousel" id="parteners--owl" style="direction: ltr" >
                         @foreach ($parteners as $item)
-                            <div class="item m-2">
-                                <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" style="height: 200px!important; width: auto!important">
+                            <div class="item m-2" style="margin: auto" >
+                                <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" style="height: 200px!important; width: auto!important;margin: auto">
                             </div>
                         @endforeach
                     </div>
