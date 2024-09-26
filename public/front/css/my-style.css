@@ -1099,3 +1099,41 @@ div.soical-media a{
     font-size: x-large !important;
     line-height: 30px !important;
 }
+
+.owl-prev{
+
+    background-color: unset;
+    border-radius: 50%;
+    border: unset;
+
+}
+
+.owl-prev span
+{
+    font-size: 50px;
+    /* margin-left: 31px; */
+    color: #DDC5AF;
+}
+
+.owl-next span
+{
+    font-size: 50px;
+    /* margin-left: 31px; */
+    color: #B58050;
+}
+
+.owl-next{
+
+
+    background-color: unset;
+    border-radius: 50%;
+    border: unset;
+}
+
+.owl-nav {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+}

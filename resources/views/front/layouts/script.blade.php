@@ -1,7 +1,7 @@
   <!-- Scripts -->
   <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
   <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('front/js/owl-carousel.js') }}"></script>
+  <script src="{{ asset('front/js/owl-carousel.js') }}?v=1.1""></script>
   <script src="{{ asset('front/js/animation.js') }}"></script>
   <script src="{{ asset('front/js/imagesloaded.js') }}"></script>
   <script src="{{ asset('front/js/popup.js') }}"></script>
